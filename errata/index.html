@@ -1,0 +1,270 @@
+---
+layout: default
+title: 'Errata'
+---
+      
+		<div id="main" class="col-left">
+		           
+                                                                                                
+                <div class="post">
+
+                    <h1 class="title"><a href="index.html" rel="bookmark" title="Errata">Errata</a></h1>
+
+                    <div class="entry">
+	                	<p>Unfortunately mistakes happen especially in programming. Below is the list of known issues discovered in the published book.</p>
+<p><a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#119;&#104;&#105;&#116;&#101;&#112;&#101;&#097;&#107;&#115;&#111;&#102;&#116;&#119;&#097;&#114;&#101;&#046;&#099;&#111;&#109;?&#083;&#117;&#098;&#106;&#101;&#099;&#116;=&#076;&#101;&#097;&#114;&#110;&#105;&#110;&#103;%&#050;&#048;&#105;&#080;&#097;&#100;%&#050;&#048;&#080;&#114;&#111;&#103;&#114;&#097;&#109;&#109;&#105;&#110;&#103;%&#050;&#048;&#069;&#114;&#114;&#097;&#116;&#097;">Report New Errors/Findings/Issues</a></p>
+<p><strong>In General:</strong></p>
+<ul>
+<li>In some chapters (especially Chapter 2) of the digital version of the book the Command symbol (⌘) has been replaced with the letter &#8220;c&#8221;. So if you see a shortcut key that looks like Option-c-4 know that it should be Option-⌘-4. (Update: The digital version has been correct and <a href="http://learnipadprogramming.com/2012/01/27/kindle-and-ibooks-versions-are-available-2/">updates are available</a>.)</li>
+</ul>
+<p><strong>Preface:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 1:</strong></p>
+<ul>
+<li>On Page 17, the Note section refers to the action name <code>displayName:</code>. It should read <code>displayHelloName:</code>.</li>
+</ul>
+<p><strong>Chapter 2:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 3:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 4:</strong></p>
+<ul>
+<li>On Page 83, ivars <code>lastResult_</code> and <code>headsCount_</code> should be <code>_lastResult</code> and <code>_headsCount</code> respectively.</li>
+</ul>
+<p><strong>Chapter 5:</strong></p>
+<ul>
+<li>On Page 95, in the Note section, &#8220;4-bit integer&#8221; and &#8220;8-bit integer&#8221; should be &#8220;4-byte integer&#8221; and &#8220;8-byte integer&#8221; respectively.</li>
+</ul>
+<p><strong>Chapter 6:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 7:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 8:</strong></p>
+<ul>
+<li>Figure 8.11 shows a toolbar at the top of the DetailViewController.xib. This is no longer correct with the latest version of Xcode. The Master Detail application template has changed. With the latest template generated code, there is no toolbar at the top of the DetailViewController NIB. Instead, the instance of DetailViewController created in the AppDelegate is added to a UINavigationController, which provides a navigation bar at the top.</li>
+</ul>
+<p><strong>Chapter 9:</strong></p>
+<ul>
+<li>Figure 9.4 shows the offending line of code that causes an uncaught exception. You may need to set a <a href="http://learnipadprogramming.com/2011/12/10/breakpoint-on-all-exceptions/">breakpoint for all exceptions</a> to see the same line of code when running the sample code.</li>
+<li>Listing 9.18 implements the UITableViewDataSource protocol method <code>- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath</code>. In the final release of Xcode 4.2 the <code>fromIndexPath</code> variable was renamed to <code>sourceIndexPath</code> and <code>toIndexPath</code> was renamed to <code>destinationIndexPath</code>.</li>
+<li>In Listing 9.18, the implementation for <code>tableView:moveRowAtIndexPath:toIndexPath:</code> uses the <code>exchangeObjectAtIndex:withObjectAtIndex:</code> method found on NSMutableOrderSet. This is not correct. The implementation should have used <code>moveObjectsAtIndexes:toIndex:</code>. Here is the corrected implementation:
+<pre class="brush: objc; highlight: [3,4]; title: ; notranslate" title="">
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+   NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:[fromIndexPath row]];
+   [[self data] moveObjectsAtIndexes:indexSet toIndex:[toIndexPath row]];
+}
+</pre>
+</li>
+</ul>
+<p><strong>Chapter 10:</strong></p>
+<ul>
+<li>On Page 237, DetailView should be <em>DetailViewController</em>. The second sentence in the first paragraph should read &#8220;The wheel view will be displayed in the <em>DetailViewController</em>.&#8221; Also, Step 1 that follows the first paragraph should read &#8220;Open <em>DetailViewController.xib</em>.&#8221;</li>
+<li>At the bottom of Page 245, the file name <em>DetailView.xib</em> should be <em>DetailViewController.xib</em>.
+</ul>
+<p><strong>Chapter 11:</strong></p>
+<ul>
+<li>In Listing 11.4, the logic used to calculate the angle of rotation can result in a divide by zero error. The problem is caused when the line 1 start and end are the same or when line 2 start and end are the same. A beautiful <a href="https://github.com/kirbyt/PhotoWheel/commit/e43e33a9be71e293f35f86db6451edf76a93c841">fix has been provided by Duncan C</a> that not only solves the divide by zero problem, it simplifies the code. And it goes to show, math is hard.</li>
+</ul>
+<p><strong>Chapter 12:</strong></p>
+<ul>
+<li>On Page 281 at the end of the first full paragraph, the popover controller property name is called popoverController. This is incorrect. It should say masterPopoverController.</li>
+<li>In Listing 12.7, the declared property <code>popoverController</code> references should be <code>masterPopoverController</code>.</li>
+<li>If the image picker controller is displayed in a popover and you rotate the device, an exception is thrown with the reason &#8220;-[UIPopoverController dealloc] reached while popover is still visible.&#8221; This is caused by not dismissing the popover controller prior to setting the masterPopoverController property to a new reference or nil. Here is the updated code needed in DetailViewController.m:
+<pre class="brush: objc; highlight: [5,14]; title: ; notranslate" title="">
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+{
+   barButtonItem.title = NSLocalizedString(@&amp;quot;Photo Albums&amp;quot;, @&amp;quot;Photo albums title&amp;quot;);
+   [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+   [[self masterPopoverController] dismissPopoverAnimated:YES];
+   self.masterPopoverController = popoverController;
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+   // Called when the view is shown again in the split view, invalidating
+   // the button and popover controller.
+   [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+   [[self masterPopoverController] dismissPopoverAnimated:YES];
+   self.masterPopoverController = nil;
+}
+</pre>
+</ul>
+<p><strong>Chapter 13:</strong></p>
+<ul>
+<li>In Listing 13.12 on Page 297, the line of code <code>photoAlbum_ = photoAlbum</code> should be <code>_photoAlbum = photoAlbum</code></li>
+<li>Figure 13.1 on Page 302 shows a screenshot of an earlier version of the PhotoWheel prototype project. The purpose of this screenshot is to show where you can find the list of linked frameworks. You may see a different list as you work through the book. For instance, QuartzCore.framework is listed in the figure image, but it is not needed by the PhotoWheel prototype app. Also, ignore the OneFingerRotatio…tureRecognizer.h and .m files shown in the Project navigator of the figure image. These were renamed to SpinGestureRecognizer.h and .m after the screenshot was taken.</li>
+<li>On Page 304, the paragraph before Listing 13.14 includes the sentence &#8220;It also declares a utility method called save-Context that will save any outstanding changes in the managed object context.&#8221; The correct method name is -saveContext, not save-Context. Also, the code for -saveContext is missing from Listing 13.14  This is okay since the method is never used by the prototype app. If you want to see the code for -saveContext then create a new Xcode project that uses Core Data. The method will be included in the template generated code.</li>
+<li>Figure 13.4 on Page 307 is a screenshot of the Core Data model editor. The screenshot was taken with the PhotoWheel project loaded. Ignore the project files shown in the Project navigator of the figure image. The PhotoWheel project is created in Chapter 14.</li>
+<li>Step 5 on Page 308 introduces the flag &#8220;Allows External Storage.&#8221; It should be noted that to use this flag you must be running Xcode 4.2 or greater on Mac OS X 10.7 (Lion) or greater. If you are running Xcode 4.2 on Mac OS X 10.6 (Snow Leopard) then a number of errors are generated by the compile. For the purpose of learning, it is recommended you not set this flag if you are running Xcode 4.2 on Snow Leopard. While you would not storage large images in a Core Data persistent store in a production app, it&#8217;s perfectly okay to do it in the prototype app you build as you work through the book.</li>
+<li>On Page 310, step 8 should read &#8220;Click the <strong>Add Relationship</strong> button (the one that earlier read <strong>Add Attribute</strong>).&#8221;</li>
+<li>In Listing 13.21 on Page 317, the method declaration <code>- (void)saveImage:(UIImage *)newImage</code> has a trailing semicolon. This does not cause a compile error, but it is bad styling. It should be removed.
+<li>In Listing 13.21 on Page 317 in the saveImage: method, the line of code that initializes the local variable <code>thumbnailImage</code> has an extra bracket character at the end. The correct line of code is:
+<pre class="brush: objc; gutter: false; title: ; notranslate" title="">
+UIImage *thumbnailImage = [self image:newImage scaleAndCropToMaxSize:thumbnailSize];
+</pre>
+</li>
+<li>
+In Listing 13.31 on Page 324, the [tableView reloadRowsAtIndex:] call causes _UITableViewUpdateSupport to raise an assertion when there is one album name in the table view and the user taps it.. This crashes the app at runtime. The reloadRowsAtIndex: is used to force the previously and newly selected cells to set the accessory type. Another approach to this implementation is to set the accessory type explicitly within the implementation instead of relying on reloadRowsAtIndexPaths:. Here is the updated code (with the new lines of code highlighted):</p>
+<pre class="brush: objc; highlight: [4,5,6,7,8]; title: ; notranslate" title="">
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   NSIndexPath *oldCurrentAlbumIndexPath = [NSIndexPath indexPathForRow:[self currentAlbumIndex] inSection:0];
+   UITableViewCell *cell = [tableView cellForRowAtIndexPath:oldCurrentAlbumIndexPath];
+   [cell setAccessoryType:UITableViewCellAccessoryNone];
+
+   cell = [tableView cellForRowAtIndexPath:indexPath];
+   [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+   [self setCurrentAlbumIndex:[indexPath row]];
+
+   PhotoAlbum *selectedAlbum = [[self data] objectAtIndex:[indexPath row]];
+   [[self detailViewController] setPhotoAlbum:selectedAlbum];
+}
+</pre>
+</li>
+<li>On Page 325, the paragraph that starts with &#8220;As with the property list version, you need to add a property in DetailViewController called selectedWheelViewCellIndex&#8221; should also tell you to make the same changed made in Listing 13.9, which is to the highlighted list of code shown below:
+<pre class="brush: objc; highlight: [4,5]; title: ; notranslate" title="">
+- (void)cellTapped:(UIGestureRecognizer *)recognizer
+{
+   [self setSelectedPhotoWheelViewCell:(PhotoWheelViewCell *)[recognizer view]];
+   [self setSelectedWheelViewCellIndex:
+    [[self data] indexOfObject:[self selectedPhotoWheelViewCell]]];
+
+   BOOL hasCamera = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+   if (hasCamera) {
+      [self presentPhotoPickerMenu];
+   } else {
+      [self presentPhotoLibrary];
+   }
+}
+</pre>
+</li>
+</ul>
+<p><strong>Chapter 14:</strong></p>
+<ul>
+<li>On Page 346 under the <strong>Creating a Segue</strong> section, it says the Storyboard Segues HUD shows the <code>performSegueWithIdentifier:sender:</code> method. This is no longer true for the final release of Xcode 4.2. Instead the Storyboard Segues HUD looks like this:
+<p><img src="http://learnipadprogramming.com/files/2012/01/lipad-storyboardsegues-hud.png" alt="Lipad storyboardsegues hud" border="0" width="145" height="116" /></li>
+</ul>
+<p><strong>Chapter 15:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 16:</strong></p>
+<ul>
+<li>The caption for Listing 16.19 refers to the file name PhotoWheelViewController.m. The correct file name is PhotoWheelViewCell.m.</li>
+</ul>
+<p><strong>Chapter 17:</strong></p>
+<ul>
+<li>In Item 22 on Page 466, the second sentence says, &#8220;in this custom getter method&#8221; when it should say &#8220;setter method.&#8221; The same is true in Item 23 on the same page. The sentence &#8220;This fires the custom setCurrentIndex getter method&#8221; should read &#8220;This fires the custom setCurrentIndex setter method.&#8221;</li>
+</ul>
+<p><strong>Chapter 18:</strong></p>
+<ul>
+<li>Listing 18.3 on Page 509 is missing the curly brace after the <code>- (void)layoutForLandscape</code> declaration.</li>
+<li>Listing 18.5 on Page 512 has the wrong PhotoScroller project URL. The URL in the listing points to the preview page, which is no longer available. The correct URL is: <a href="https://developer.apple.com/library/ios/#samplecode/PhotoScroller/Introduction/Intro.html%23//apple_ref/doc/uid/DTS40010080">https://developer.apple.com/library/ios/#samplecode/PhotoScroller/Introduction/Intro.html%23//apple_ref/doc/uid/DTS40010080</a></li>
+</ul>
+<p><strong>Chapter 19:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 20:</strong></p>
+<ul>
+<li>In Listing 20.4 on Page 544, the second comment block should show the file name PhotoAlbumViewController.m, not .h.</li>
+</ul>
+<p><strong>Chapter 21:</strong></p>
+<ul>
+<li>In Listing 21.5, the class extension for ImageDownloader defines a declared property for the completion block. The property attribute <em>strong</em> should be <em>copy</em>. The correct line of code is:
+<pre class="brush: objc; gutter: false; title: ; notranslate" title="">
+@property (nonatomic, copy) ImageDownloaderCompletionBlock completion;
+</pre>
+</li>
+<li>Step 8 on Page 578 says &#8220;The method <code>-disablesAutomaticKeyboardDismissal</code> is an override method for NSViewController.&#8221; It should say the method is an override for UIViewController.</li>
+</ul>
+<p><strong>Chapter 22:</strong></p>
+<ul>
+<li>In Listing 22.1 on Page 594, the UIImage category method pw_imageScaleAndCropToMaxSize: is used. This category was from an earlier version of the PhotoWheel, and it never made its way into the book. Instead, the local method scaleAndCropToMaxSize: should be used. Also, the method -createScaledImagesForImage: should appear before the -saveImage: method to avoid having to create a forward declaration for -createScaledImagesForImage:. Here is the corrected source:
+<pre class="brush: objc; highlight: [5,11,25]; title: ; notranslate" title="">
+- (void)createScaledImagesForImage:(UIImage *)originalImage
+{
+   // Save thumbnail
+   CGSize thumbnailSize = CGSizeMake(75.0, 75.0);
+   UIImage *thumbnailImage = [self image:originalImage scaleAndCropToMaxSize:thumbnailSize];
+   NSData *thumbnailImageData = UIImageJPEGRepresentation(thumbnailImage, 0.8);
+   [self setThumbnailImageData:thumbnailImageData];
+
+   // Save small image
+   CGSize smallSize = CGSizeMake(100.0, 100.0);
+   UIImage *smallImage = [self image:originalImage scaleAndCropToMaxSize:smallSize];
+   NSData *smallImageData = UIImageJPEGRepresentation(smallImage, 0.8);
+   [self setSmallImageData:smallImageData];
+
+   // Save large (screen-size) image
+   CGRect screenBounds = [[UIScreen mainScreen] bounds];
+   // Calculate size for retina displays
+   CGFloat scale = [[UIScreen mainScreen] scale];
+   CGFloat maxScreenSize = MAX(screenBounds.size.width, screenBounds.size.height) * scale;
+
+   CGSize imageSize = [originalImage size];
+   CGFloat maxImageSize = MAX(imageSize.width, imageSize.height) * scale;
+
+   CGFloat maxSize = MIN(maxScreenSize, maxImageSize);
+   UIImage *largeImage = [self image:originalImage scaleAspectToMaxSize:maxSize];
+   NSData *largeImageData = UIImageJPEGRepresentation(largeImage, 0.8);
+   [self setLargeImageData:largeImageData];
+}
+
+- (void)saveImage:(UIImage *)newImage;
+{
+   NSData *originalImageData = UIImageJPEGRepresentation(newImage, 0.8);
+   [self setOriginalImageData:originalImageData];
+   [self createScaledImagesForImage:newImage];
+}
+</pre>
+</li>
+<li>On Page 603, the second paragraph says, &#8220;To listen for this notification, change the <code>-managedObjectContext</code> method in <em>PhotoWheelAppDelegate.m</em> to look like Listing 22.9.&#8221; The correct file name is AppDelegate.m.</li>
+<li>On Page 606, <code>NSFetchedResultsController</code> is misspelled as <code>NSFetchedResultController</code>. The &#8220;s&#8221; is missing from &#8220;Results.&#8221;</li>
+</ul>
+<p><strong>Chapter 23:</strong></p>
+<ul>
+<li>In Listing 23.3 on Page 615, on final line of code, the ivar currentIndex_ should be _currentIndex to match the sample source code.</li>
+</ul>
+<p><strong>Chapter 24:</strong></p>
+<ul>
+<li>In Listing 24.12 on on Page 646, the ivar -filterButtons should be _filterButtons.</li>
+</ul>
+<p><strong>Chapter 25:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Chapter 26:</strong></p>
+<ul>
+<li>On Page 684, the first paragraph mentions the &#8220;iPhone Developer Program.&#8221; It is now called the iOS Developer Program.</li>
+</ul>
+<p><strong>Chapter 27:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+<p><strong>Appendix A:</strong></p>
+<ul>
+<li>No known issues at this time.</li>
+</ul>
+	               	</div><!-- /.entry -->
+
+					                    
+                </div><!-- /.post -->
+                
+                                                                    
+			  
+        
+		</div><!-- /#main -->
+
+{% include latest.html %}

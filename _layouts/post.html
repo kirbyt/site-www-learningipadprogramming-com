@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<!-- #main Starts -->
+<div id="main" class="col-left">      
+    <!-- Post Starts -->
+    <div class="post-405 post type-post status-publish format-standard hentry category-general category-objective-c">
+        <h2 class="title"><a href="{{ root_url }}{{ post.url }}" rel="bookmark" title="{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h2>
+
+        <p class="post-meta">
+            <span class="small">by</span> <span class="post-author">kirbyt</span>
+            <span class="small">on</span> <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+            {% if page.categories %}<span class="small">in</span> <span class="post-category">{{ page.categories | category_links }}</span>{% endif %}
+        </p>
+
+        <div class="entry">
+            {{ content }}
+        </div>
+
+    </div><!-- /.post -->
+    <!--- Post Ends -->
+
+</div><!-- /#main -->
+
+{% include latest.html %}

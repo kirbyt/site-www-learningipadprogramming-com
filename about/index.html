@@ -1,0 +1,126 @@
+---
+layout: default
+title: 'About'
+---
+
+<div id="main" class="col-left">
+    <div class="post">
+        <h1 class="title"><a href="index.html" rel="bookmark" title="About">About</a></h1>
+        <div class="entry">
+<p>Learning iPad Programming is authored by Kirby Turner and Tom Harrington.</p>
+
+<p><img src="../files/2011/09/kirbyturner.jpg" alt="Kirbyturner" border="0" width="128" height="128" style="float:left" /><strong>Kirby Turner</strong> is an independent software developer and <a href="http://whitepeaksoftware.com/">business owner</a> focusing on Mac and iOS programming. Kirby has been programming since the early 1980s. He sells his own apps through his company <a href="http://whitepeaksoftware.com/">White Peak Software</a>, and he does contract programming when time allows.</p>
+
+<p>In 2007 Kirby made the move from the Microsoft world to the world built by a particularly wonderful <a href="http://www.apple.com/">fruit company</a> out of Cupertino, California. It didn't take long before he fell in love with Cocoa and Xcode. The developer experience created by Apple made programming fun again, something he hadn't felt since the early days of Delphi.</p>
+
+<p>When Kirby is not sitting behind the keyboard, he can be found hanging out with his wife Melanie and son Rowan, hiking the mountains of New England, kayaking the waters in and around Salem, Massachusetts, and snowboarding down mountains in search of perfect powder.</p>
+
+<p><img src="../files/2011/09/tomharrington.jpg" alt="Tomharrington" border="0" width="128" height="128" style="float:left" /><strong>Tom Harrington</strong> switched from writing software for embedded systems and Linux to Mac OS X in 2002 when he started Atomic Bird, LLC. After six years of developing highly regarded Mac software, he moved to iPhone in 2008. He develops iOS software on a contract basis for a variety of clients. Tom also organizes iOS developer events in Colorado. When not writing software, Tom can often be found on his mountain bike. His website is <a href="http://www.atomicbird.com">www.atomicbird.com</a>.</p>
+       	</div><!-- /.entry -->
+    </div><!-- /.post -->
+</div><!-- /#main -->
+
+<div id="sidebar" class="col-right">
+    <div class="primary">
+		<div id="woo_twitter-3" class="widget widget_woo_twitter">        
+		    <h3><a href="http://twitter.com/kirbyt">@kirbyt</a></h3>        
+		    <ul id="twitter_update_list_woo_twitter-3"><li></li></ul>	
+    	    <script type="text/javascript">
+        	<!--//--><![CDATA[//><!--
+
+        	    function twitterCallback2(twitters) {
+
+        	      var statusHTML = [];
+        	      for (var i=0; i<twitters.length; i++){
+        	        var username = twitters[i].user.screen_name;
+        	        var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+        	          return '<a href="'+url+'">'+url+'</a>';
+        	        }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+        	          return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+        	        });
+        	        statusHTML.push( '<li><span class="content">'+status+'</span> <a style="font-size:85%" class="time" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a></li>' );
+        	      }
+        	      document.getElementById( 'twitter_update_list_woo_twitter-3').innerHTML = statusHTML.join( '' );
+        	    }
+
+        	    function relative_time(time_value) {
+        	      var values = time_value.split( " " );
+        	      time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+        	      var parsed_date = Date.parse(time_value);
+        	      var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+        	      var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+        	      delta = delta + (relative_to.getTimezoneOffset() * 60);
+
+        	      if (delta < 60) {
+        	        return 'less than a minute ago';
+        	      } else if(delta < 120) {
+        	        return 'about a minute ago';
+        	      } else if(delta < (60*60)) {
+        	        return (parseInt(delta / 60)).toString() + ' minutes ago';
+        	      } else if(delta < (120*60)) {
+        	        return 'about an hour ago';
+        	      } else if(delta < (24*60*60)) {
+        	        return 'about ' + (parseInt(delta / 3600)).toString() + ' hours ago';
+        	      } else if(delta < (48*60*60)) {
+        	        return '1 day ago';
+        	      } else {
+        	        return (parseInt(delta / 86400)).toString() + ' days ago';
+        	      }
+        	    }
+        	//-->!]]>
+        	</script>
+            <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/kirbyt.json?callback=twitterCallback238count=338include_rts=t"></script>
+        </div>   		
+    
+		<div id="woo_twitter-4" class="widget widget_woo_twitter">        
+		    <h3><a href="http://twitter.com/atomicbird">@atomicbird</a></h3>        
+		    <ul id="twitter_update_list_woo_twitter-4"><li></li></ul>	
+        	<script type="text/javascript">
+        	<!--//--><![CDATA[//><!--
+
+        	    function twitterCallback2(twitters) {
+
+        	      var statusHTML = [];
+        	      for (var i=0; i<twitters.length; i++){
+        	        var username = twitters[i].user.screen_name;
+        	        var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+        	          return '<a href="'+url+'">'+url+'</a>';
+        	        }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+        	          return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+        	        });
+        	        statusHTML.push( '<li><span class="content">'+status+'</span> <a style="font-size:85%" class="time" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a></li>' );
+        	      }
+        	      document.getElementById( 'twitter_update_list_woo_twitter-4').innerHTML = statusHTML.join( '' );
+        	    }
+
+        	    function relative_time(time_value) {
+        	      var values = time_value.split( " " );
+        	      time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+        	      var parsed_date = Date.parse(time_value);
+        	      var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+        	      var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+        	      delta = delta + (relative_to.getTimezoneOffset() * 60);
+
+        	      if (delta < 60) {
+        	        return 'less than a minute ago';
+        	      } else if(delta < 120) {
+        	        return 'about a minute ago';
+        	      } else if(delta < (60*60)) {
+        	        return (parseInt(delta / 60)).toString() + ' minutes ago';
+        	      } else if(delta < (120*60)) {
+        	        return 'about an hour ago';
+        	      } else if(delta < (24*60*60)) {
+        	        return 'about ' + (parseInt(delta / 3600)).toString() + ' hours ago';
+        	      } else if(delta < (48*60*60)) {
+        	        return '1 day ago';
+        	      } else {
+        	        return (parseInt(delta / 86400)).toString() + ' days ago';
+        	      }
+        	    }
+        	//-->!]]>
+        	</script>
+        	<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/atomicbird.json?callback=twitterCallback238count=338include_rts=t"></script>
+ 
+        </div>   		
+	</div>        
+</div><!-- /#sidebar -->

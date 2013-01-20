@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ios | Learning iPad Programming]]></title>
+  <link href="http://www.learningipadprogramming.com/category/ios/atom.xml" rel="self"/>
+  <link href="http://www.learningipadprogramming.com/"/>
+  <updated>2013-01-20T01:36:54-05:00</updated>
+  <id>http://www.learningipadprogramming.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How To Ignore performSelector Leak Warning]]></title>
+    <link href="http://www.learningipadprogramming.com/2012/04/03/how-to-ignore-performselector-leak-warning/"/>
+    <updated>2012-04-03T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2012/04/03/how-to-ignore-performselector-leak-warning</id>
+    <content type="html"><![CDATA[<p>In Listing 16.22 from the Learning iPad Programming book, I show how to invoke a method using -performSelector: where the selector is determined at runtime from a set of names stored in an NSArray. The implementation in Listing 16.22 could have been done a number of different ways, but I chose this approach to show how to set and perform a selector at runtime. However, the code produces a compiler warning message when ARC is used.</p>
+
+<p>Because ARC is used and the selector is determined at run, the compiler generates a &#8220;possible memory leak&#8221; warning message. This warning is legitimate given that the selector is unknown at compile time and ARC is being used to manage memory.</p>
+
+<p>At the time the code in Listing 16.22 was written, there was no way to ignore this warning message. That can be a good thing since explicitly ignoring a warning message from the compiler can be a bad thing. 99.9% of the time you want to fix or refactor your code so the warning message goes away. However, there are times when you know more than the compiler does, and the code in Listing 16.22 is one of those rare times.</p>
+
+<p>In this particular case, each selector that can potentially be called will not cause a memory leak because each one returns a void. The compiler doesn&#8217;t know this, but you (as the programmer) know this to be true. So this warning message can safely be ignored. But how do you tell the compiler to ignore the -performSelector possible memory leak warning so you don&#8217;t have to see the warning message each time you compile the project?</p>
+
+<p>You can use tell clang to ignore the -performSelector leak warning by wrapping the -performSelector: call with a set of #pragma statements that temporarily ignore the warning for the code included in the block. Here is an example:</p>
+
+<p><span>objc</span></p>
+
+<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
+
+<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
+
+<p><span>self performSelector:selector</span>;</p>
+
+<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
+
+<p><span>/objc</span></p>
+
+<p>So the code causing the warning message in Listing 16.22 for the PhotoWheel app now looks like this:</p>
+
+<p><span>objc highlight=&#8221;22,23-25&#8221;</span> - (void)actionSheet:(UIActionSheet <em>)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex { // Do nothing if the user taps outside the action // sheet (thus closing the popover containing the // action sheet). if (buttonIndex &#60; 0) { return; }</em></p>
+
+<p>NSMutableArray <em>names = <span><span>NSMutableArray alloc</span> init</span>;</em></p>
+
+<p>if (<span>actionSheet tag</span> == 0) { <span>names addObject:@&#34;confirmDeletePhotoAlbum&#34;</span>;</p>
+
+<p>} else { BOOL hasCamera = <span>UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera</span>; if (hasCamera) <span>names addObject:@&#34;presentCamera&#34;</span>; <span>names addObject:@&#34;presentPhotoLibrary&#34;</span>; }</p>
+
+<p>SEL selector = NSSelectorFromString(<span>names objectAtIndex:buttonIndex</span>);</p>
+
+<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
+
+<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
+
+<p><span>self performSelector:selector</span>;</p>
+
+<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
+
+<p>} <span>/objc</span></p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning iPad Programming LiveLessons Available for Purchase]]></title>
+    <link href="http://www.learningipadprogramming.com/2012/03/13/learning-ipad-programming-livelessons-available-for-purchase/"/>
+    <updated>2012-03-13T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2012/03/13/learning-ipad-programming-livelessons-available-for-purchase</id>
+    <content type="html"><![CDATA[<p>I learned today that the <a href='http://www.informit.com/store/product.aspx?isbn=0321821661'>Learning iPad Programming LiveLessons</a> videos are available for purchase from the <a href='http://www.informit.com/store/product.aspx?isbn=0321821661'>InformIT web site</a>. So you don&#8217;t need a Safari Books Online account to purchase and enjoy these training videos.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning iPad Programming LiveLessons]]></title>
+    <link href="http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons/"/>
+    <updated>2012-03-12T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons</id>
+    <content type="html"><![CDATA[<a href='http://bit.ly/ipadlivelessons'><img hspace='10' vspace='10' src='http://my.safaribooksonline.com/images/9780132981163/9780132981163_s.jpg' border='0' height='174' width='145' align='left' /></a>
+<p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
+
+<p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;subid=&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Voices That Matter]]></title>
+    <link href="http://www.learningipadprogramming.com/2011/04/06/voices-that-matter-2/"/>
+    <updated>2011-04-06T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2011/04/06/voices-that-matter-2</id>
+    <content type="html"><![CDATA[<p>I admit this post is about 2 months late, but better late then never, right? I’m speaking on branding your iPhone and iPad app at this weekend’s <a href='http://bit.ly/VTM2011'>Voices That Matter</a> conference in Seattle.</p>
+
+<p>VTM is a great opportunity for iOS developers to gather, network, and learn from one another. As expected with VTM, the speaker list is outstanding and I’m honored to be included among those speaking this weekend.</p>
+
+<p>New to VTM is the one-day workshop on Friday. I for one am looking forward to getting hands on with Cocos2D in the intro to game programming workshop taught by Rod Strougo and Ray Wenderlich.</p>
+
+<p>Tickets are still available for the conference. You can also get an additional $100 off with the discount code SEASPK2. So what are you waiting for? <a href='http://www.voicesthatmatter.com/iphonespring2011/register.aspx'>Register now</a> and see you in Seattle.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What Do I Need to Write iOS Apps?]]></title>
+    <link href="http://www.learningipadprogramming.com/2010/12/30/what-do-i-need-to-write-ios-apps/"/>
+    <updated>2010-12-30T00:00:00-05:00</updated>
+    <id>http://www.learningipadprogramming.com/2010/12/30/what-do-i-need-to-write-ios-apps</id>
+    <content type="html"><![CDATA[<p>Since this is my first official blog post on the topic of learning iPad programming, I thought it appropriate to explain what you need to get started. The most common question I get from those interested in iOS is, &#8220;What do I need to write apps for iOS?&#8221; My first response is, &#8220;You need a Mac.&#8221;</p>
+
+<p>This tends to catch Windows developers off guard. &#8220;What? No Xcode for Windows?&#8221; Sorry folks. There&#8217;s no Xcode for Windows just like there is no Visual Studio for OS X. If you want to write native apps for iOS you will need to buy a Mac. But&#8217;s it&#8217;s not as expense as it may seem.</p>
+
+<p>Let&#8217;s compare the cost&#8230;</p>
+<h2>Startup Costs for Windows Development</h2>
+<p>If you want to start writing native Windows apps, you need to buy a computer capable of running Windows. This will cost you $1000 to $1500 for a capable Windows development machine. You also need to buy the developer tools. <a href='http://www.microsoft.com/visualstudio/en-us/products/2010-editions/professional'>Visual Studio Professional Edition with MSDN</a> will cost you $1200, or if you prefer, <a href='http://www.embarcadero.com/products/delphi'>Delphi Professional</a> will cost you $900. And each two years or so, you will need to pay for the major updates to your developer tools.</p>
+
+<p>You can save money by using Microsoft&#8217;s Express Edition of Visual Studio, but I view the Express Edition as developer tools for the hobbyist. I&#8217;m a professional developer so I think about what I need as a professional developer. And the Express Edition just doesn&#8217;t cut it for me.</p>
+
+<p>Another development cost for Windows developers is third party components. I don&#8217;t know a single Windows developer who hasn&#8217;t invested in third party components to help improve their Windows app. The price for component suites vary, but it&#8217;s not usual to spend $1000 or more on third party components.</p>
+
+<p>So the cost to start Windows development looks like this:</p>
+
+<p>Computer: $1000 Development tools: $1200 Components: $1000</p>
+<strong>Total: $3200</strong>
+<p>Note this is a very simplistic look at the upfront cost. Your cost maybe slightly lower or higher. For instance, I&#8217;m assuming the computer comes with a licensed copy of Windows, though it&#8217;s likely a $1000 computer will come with one of the lower end editions of Windows. For professional Windows development, you need one of the higher end editions, which increases your cost.</p>
+
+<p>Now let&#8217;s take a look at the upfront cost to start Mac OS X development.</p>
+<h2>Startup Cost for Mac OS X Development</h2>
+<p>You need to buy a Mac computer. Apple&#8217;s <a href='http://www.apple.com/macbook/'>MacBook</a> is a perfect entry level developer machine, and best of all, it will only set you back $1000. You can save money by buying a <a href='http://www.apple.com/macmini/'>Mac mini</a>, but the Mac mini does not include a monitor, keyboard, or mouse. So unless you already have those items, a Mac mini will not save you money.</p>
+
+<p>Next you need to buy the developer tools. Your cost? Free. Yes, you read that right. Apple does not charge for developer tools. The tools are <a href='http://en.wiktionary.org/wiki/free_as_in_beer'>free as in beer</a>. And because the application framework, called Cocoa, used to write Mac OS X applications is so robust you will find you do not need to rely on third party components. And any third party components that you might need are often open source with liberal MIT and BSD licensing. Your cost, again, free (though it is always a good idea to send a donation to support the development of the open source components you use most often).</p>
+
+<p>So the break down for the upfront cost for Mac OS X development is:</p>
+
+<p>Computer: $1000 Development tools: $0 Components: $0</p>
+<strong>Total: $1000</strong>
+<p>As you can see entering into Mac OS X development is cheaper than Windows development. But this posting isn&#8217;t about OS X development, it&#8217;s about iOS development. So what other cost are expected for iOS development?</p>
+<h2>Startup Cost for iOS Development</h2>
+<p>In addition to owning a Mac computer, you need to have an iOS device to test your application. You can buy the latest <a href='http://www.apple.com/ipodtouch/'>iPod touch</a> for as little as $230 while the <a href='http://www.apple.com/ipad/'>iPad</a> starts at $500. You can save a few dollars by buying a used or refurbished device. I&#8217;m a huge fan of buying refurbished devices for development and testing purposes.</p>
+
+<p>There is another cost for iOS developer. To install and test your iOS app on a physical iOS device, you must join the <a href='http://developer.apple.com/programs/ios/'>iOS Developer Program</a>. Membership costs $99 per year.</p>
+
+<p>So a break down of the upfront cost for native iOS development with an iPad looks like this:</p>
+
+<p>Computer: $1000 Development tools: $0 Components: $0 iPad: $500 iOS Dev Program: $99</p>
+<strong>Total: $1599</strong>
+<p>The upfront cost is still lower than entering Windows development. But let&#8217;s say you are already a Windows developer and you already own a Windows computer. The fact that you must buy a new computer is an unexpected upfront cost. It might be nice if you could continuing using your current Windows computer, but buying a Mac isn&#8217;t a bad thing either. In fact, your shinny new Mac computer can run both Windows and OS X. Yep, the best of both worlds.</p>
+<h2>Getting the Best of Both Worlds</h2>
+<p>I&#8217;ll be the first to say a MacBook, while great for OS X and iOS development, may not be the best development machine if you need to also do Windows development. You will want to get an iMac or MacBook Pro with lots of RAM. This should come as no surprise to Windows developers. Windows and Visual Studio tend to be memory hogs. If you plan to do both Windows and iOS development then I recommend buying a Mac computer with a minimum of 4 GB of RAM, 8 GB preferred, and lots of hard drive storage, 320 GB minimum.</p>
+
+<p>Your Mac can be setup to dual-boot between OS X and Windows, but my preferred approach is running virtual machines within OS X. <a href='http://www.vmware.com/products/fusion/'>VMware Fusion</a> and <a href='http://www.parallels.com/products/desktop/'>Parallels</a> make it possible to run Windows within OS X. While I prefer Fusion, both do a nice job of running Windows in a virtual machine. And both products are inexpensive, less than $100 each.</p>
+
+<p>So now the upfront cost for a dual purpose development machine is a bit more because the you need to buy a more powerful computer, and optionally virtualization software, but the benefit is you have one development machine capable of running both Mac OS X and Windows. The best of both worlds. (And yes, you can run Linux too!)</p>
+
+<p>This is exactly what I did in 2007. I wanted to explore Mac OS X but I still needed to run Windows for development purposes. I bought a maxed out MacBook Pro with 4 GB of RAM. Three and half years later, this machine is still going strong. To this day, it is my primary development machine, and it&#8217;s by far the best computer I&#8217;ve ever owned. It has already out lasted the Dell laptops I previously owned, which usually lasted only 2 years for me before having to buy another laptop.</p>
+
+<p>Buying a Mac computer has definitely saved me money in the long run, and it&#8217;s has allowed me to pursue any and all of my development interest, from OS X and iOS development to learning Python and Ruby. To me, the Mac is the best development machine for all types of developers.</p>
+<h2>Summary</h2>
+<p>So to sum things up, here&#8217;s what you need to get started with iOS development:</p>
+<ul>
+<li>You need a Mac.</li>
+<li>You need the developer tools.</li>
+<li>You need an iOS device.</li>
+<li>You need to join the iOS Developer Program.</li>
+</ul>
+<p>While the upfront cost for iOS development may seem expensive, it&#8217;s not when you compare it to starting Windows development. And for the professional developer, the Mac is by far the best computer to have as a development machine. It&#8217;s allows you to pursue all development interest without limitations.</p>]]></content>
+  </entry>
+  
+</feed>
