@@ -91,6 +91,10 @@ jQuery(function() {
                 </ul>               
             </div><!-- /.col-full -->
         </div><!-- /#header -->
+
+        {% if page.nobreadcrumb == null %}{% include breadcrumb.html %}{% endif %}
+        {% if page.fader %}{% include fader.html %}{% endif %}
+        
 	</div><!-- /#top -->
 
     <div id="content">
