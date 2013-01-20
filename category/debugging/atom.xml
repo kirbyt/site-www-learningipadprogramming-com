@@ -4,7 +4,7 @@
   <title><![CDATA[Category: debugging | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/debugging/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-20T01:48:55-05:00</updated>
+  <updated>2013-01-20T01:59:37-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -20,7 +20,7 @@
     <content type="html"><![CDATA[<p>In Chapter 9 of the book, I talk about an uncaught exception that will crash the app. Figure 9.4 shows the uncaught exception and the line of code that caused the exception. What I failed to mention is that you might need to set a breakpoint on all exceptions to see the offending line of code. If, for example, Xcode is highlight a line of code in main.m then you need to set a breakpoint on all exceptions.</p>
 
 <p>To set a breakpoint on all exceptions, go to the Breakpoint navigator and click the + button found in the lower left corner. You can set the breakpoint for All, Objective-C, or C++ exceptions. You can also set the break option to On Throw or On Catch. The default settings (All exceptions and On Throw) is all you need to see the offending line of code.</p>
-<img alt='ExceptionBreakpoint' width='600' height='326' src='http://learnipadprogramming.com/files/2011/12/ExceptionBreakpoint-1.png' border='0' />]]></content>
+<img border='0' width='600' height='326' src='http://learnipadprogramming.com/files/2011/12/ExceptionBreakpoint-1.png' alt='ExceptionBreakpoint' />]]></content>
   </entry>
   
 </feed>

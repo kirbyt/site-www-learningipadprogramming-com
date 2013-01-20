@@ -4,7 +4,7 @@
   <title><![CDATA[Category: learn-ipad-book | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/learn-ipad-book/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-20T01:48:55-05:00</updated>
+  <updated>2013-01-20T01:59:37-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -71,9 +71,9 @@
 
 <p>Learning iPad Programming was written based on Xcode 4.2, so everything covered in the book, with one exception, works with Xcode 4.2 on Snow Leopard. The one exception is the &#8220;Allows External Storage&#8221; flag in Core Data. This flag is discussed in Chapter 13 on Page 308, and the flag requires Lion. Compile errors are generated if you set this flag while running on Snow Leopard. Not to worry. You can still build the app without setting this flag. The app, after all, is a sample app so for the purpose of learning it is okay to not use this flag when using Xcode 4.2 on Snow Leopard.</p>
 
-<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img alt='Downloads' width='600' height='458' src='http://learnipadprogramming.com/files/2012/03/Downloads.png' border='0' /></p>
+<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img border='0' width='600' height='458' src='http://learnipadprogramming.com/files/2012/03/Downloads.png' alt='Downloads' /></p>
 
-<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img alt='IOS Dev Center  Apple Developer' width='600' height='480' src='http://learnipadprogramming.com/files/2012/03/iOS-Dev-Center-Apple-Developer.png' border='0' /></p>]]></content>
+<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img border='0' width='600' height='480' src='http://learnipadprogramming.com/files/2012/03/iOS-Dev-Center-Apple-Developer.png' alt='IOS Dev Center  Apple Developer' /></p>]]></content>
   </entry>
   
   <entry>
@@ -116,7 +116,7 @@
 <p>Compare the <a href='http://ptgmedia.pearsoncmg.com/images/9780321750402/samplepages/0321750403.pdf'>sample PDF</a> and photos below then decide for yourself if the print version is suitable for you. And if by chance you happen to receive a deflective book then let me know. Send me specific page numbers, and I can request a warehouse inspection. Or send me the book, and I&#8217;ll make sure you receive a good copy.</p>
 <h2>All Feedback is Good Feedback</h2>
 <p>One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.</p>
-<img alt='IMG 3920' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3920.jpg' border='0' /><img alt='IMG 3924' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3924.jpg' border='0' /><img alt='IMG 3926' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3926.jpg' border='0' /><img alt='IMG 3928' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3928.jpg' border='0' /><img alt='IMG 3929' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3929.jpg' border='0' /><img alt='IMG 3933' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3933.jpg' border='0' />]]></content>
+<img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3920.jpg' alt='IMG 3920' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3924.jpg' alt='IMG 3924' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3926.jpg' alt='IMG 3926' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3928.jpg' alt='IMG 3928' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3929.jpg' alt='IMG 3929' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3933.jpg' alt='IMG 3933' />]]></content>
   </entry>
   
   <entry>
@@ -132,7 +132,7 @@
     <link href="http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons/"/>
     <updated>2012-03-12T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons</id>
-    <content type="html"><![CDATA[<a href='http://bit.ly/ipadlivelessons'><img width='145' height='174' src='http://my.safaribooksonline.com/images/9780132981163/9780132981163_s.jpg' vspace='10' border='0' hspace='10' align='left' /></a>
+    <content type="html"><![CDATA[<a href='http://bit.ly/ipadlivelessons'><img border='0' width='145' height='174' src='http://my.safaribooksonline.com/images/9780132981163/9780132981163_s.jpg' vspace='10' align='left' hspace='10' /></a>
 <p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
 
 <p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;subid=&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>]]></content>

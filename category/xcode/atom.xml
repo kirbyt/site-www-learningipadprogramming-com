@@ -4,7 +4,7 @@
   <title><![CDATA[Category: xcode | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/xcode/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-20T01:48:55-05:00</updated>
+  <updated>2013-01-20T01:59:37-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -31,9 +31,9 @@
 
 <p>Learning iPad Programming was written based on Xcode 4.2, so everything covered in the book, with one exception, works with Xcode 4.2 on Snow Leopard. The one exception is the &#8220;Allows External Storage&#8221; flag in Core Data. This flag is discussed in Chapter 13 on Page 308, and the flag requires Lion. Compile errors are generated if you set this flag while running on Snow Leopard. Not to worry. You can still build the app without setting this flag. The app, after all, is a sample app so for the purpose of learning it is okay to not use this flag when using Xcode 4.2 on Snow Leopard.</p>
 
-<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img alt='Downloads' width='600' height='458' src='http://learnipadprogramming.com/files/2012/03/Downloads.png' border='0' /></p>
+<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img border='0' width='600' height='458' src='http://learnipadprogramming.com/files/2012/03/Downloads.png' alt='Downloads' /></p>
 
-<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img alt='IOS Dev Center  Apple Developer' width='600' height='480' src='http://learnipadprogramming.com/files/2012/03/iOS-Dev-Center-Apple-Developer.png' border='0' /></p>]]></content>
+<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img border='0' width='600' height='480' src='http://learnipadprogramming.com/files/2012/03/iOS-Dev-Center-Apple-Developer.png' alt='IOS Dev Center  Apple Developer' /></p>]]></content>
   </entry>
   
   <entry>
@@ -44,7 +44,7 @@
     <content type="html"><![CDATA[<p>In Chapter 9 of the book, I talk about an uncaught exception that will crash the app. Figure 9.4 shows the uncaught exception and the line of code that caused the exception. What I failed to mention is that you might need to set a breakpoint on all exceptions to see the offending line of code. If, for example, Xcode is highlight a line of code in main.m then you need to set a breakpoint on all exceptions.</p>
 
 <p>To set a breakpoint on all exceptions, go to the Breakpoint navigator and click the + button found in the lower left corner. You can set the breakpoint for All, Objective-C, or C++ exceptions. You can also set the break option to On Throw or On Catch. The default settings (All exceptions and On Throw) is all you need to see the offending line of code.</p>
-<img alt='ExceptionBreakpoint' width='600' height='326' src='http://learnipadprogramming.com/files/2011/12/ExceptionBreakpoint-1.png' border='0' />]]></content>
+<img border='0' width='600' height='326' src='http://learnipadprogramming.com/files/2011/12/ExceptionBreakpoint-1.png' alt='ExceptionBreakpoint' />]]></content>
   </entry>
   
 </feed>
