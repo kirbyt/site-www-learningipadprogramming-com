@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: events | Learning iPad Programming]]></title>
+  <link href="http://www.learningipadprogramming.com/category/events/atom.xml" rel="self"/>
+  <link href="http://www.learningipadprogramming.com/"/>
+  <updated>2013-01-20T01:44:56-05:00</updated>
+  <id>http://www.learningipadprogramming.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Voices That Matter]]></title>
+    <link href="http://www.learningipadprogramming.com/2011/04/06/voices-that-matter-2/"/>
+    <updated>2011-04-06T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2011/04/06/voices-that-matter-2</id>
+    <content type="html"><![CDATA[<p>I admit this post is about 2 months late, but better late then never, right? I’m speaking on branding your iPhone and iPad app at this weekend’s <a href='http://bit.ly/VTM2011'>Voices That Matter</a> conference in Seattle.</p>
+
+<p>VTM is a great opportunity for iOS developers to gather, network, and learn from one another. As expected with VTM, the speaker list is outstanding and I’m honored to be included among those speaking this weekend.</p>
+
+<p>New to VTM is the one-day workshop on Friday. I for one am looking forward to getting hands on with Cocos2D in the intro to game programming workshop taught by Rod Strougo and Ray Wenderlich.</p>
+
+<p>Tickets are still available for the conference. You can also get an additional $100 off with the discount code SEASPK2. So what are you waiting for? <a href='http://www.voicesthatmatter.com/iphonespring2011/register.aspx'>Register now</a> and see you in Seattle.</p>]]></content>
+  </entry>
+  
+</feed>
