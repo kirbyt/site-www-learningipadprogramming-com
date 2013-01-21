@@ -50,14 +50,14 @@ Compare the <a href="http://ptgmedia.pearsoncmg.com/images/9780321750402/samplep
 
 One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3920.jpg" alt="IMG 3920" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3920.jpg" alt="IMG 3920" border="0" width="600" height="450" />
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3924.jpg" alt="IMG 3924" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3924.jpg" alt="IMG 3924" border="0" width="600" height="450" />
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3926.jpg" alt="IMG 3926" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3926.jpg" alt="IMG 3926" border="0" width="600" height="450" />
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3928.jpg" alt="IMG 3928" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3928.jpg" alt="IMG 3928" border="0" width="600" height="450" />
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3929.jpg" alt="IMG 3929" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3929.jpg" alt="IMG 3929" border="0" width="600" height="450" />
 
-<img src="http://learnipadprogramming.com/files/2012/03/IMG_3933.jpg" alt="IMG 3933" border="0" width="600" height="450" />
+<img src="/images/blog/2012-03-24/IMG_3933.jpg" alt="IMG 3933" border="0" width="600" height="450" />

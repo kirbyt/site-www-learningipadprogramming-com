@@ -18,12 +18,12 @@ In this particular case, each selector that can potentially be called will not c
 
 You can use tell clang to ignore the -performSelector leak warning by wrapping the `-performSelector:` call with a set of `#pragma` statements that temporarily ignore the warning for the code included in the block. Here is an example:
 
-```
+{% codeblock lang:objc %}
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
    [self performSelector:selector];
 #pragma clang diagnostic pop
-```
+{% endcodeblock %}
 
 So the code causing the warning message in Listing 16.22 for the PhotoWheel app now looks like this:
 

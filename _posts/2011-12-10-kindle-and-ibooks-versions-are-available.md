@@ -21,4 +21,4 @@ To those of you who have (or will) buy a digital copy of the book, I apologize f
 
 <strong>Update:</strong> Tom pointed out to me that the source code format looks better if you reduce the font size in your ebook reader. So give that a try if you are having trouble reading through the source code listings.
 
-<strong>Update:</strong> See <a href="http://learnipadprogramming.com/2011/12/16/kindle-and-ibooks-stores-versions-will-be-available-soon/">here</a> for the latest update.
+<strong>Update:</strong> See <a href="/2011/12/16/kindle-and-ibooks-stores-versions-will-be-available-soon/">here</a> for the latest update.

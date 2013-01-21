@@ -13,7 +13,7 @@ layout: nil
     <name><![CDATA[{{ site.author | strip_html }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <rights>Copyright (c) 2003-{{ site.time | date: "%Y" }} White Peak Software Inc</rights>
+  <rights>Copyright (c) 2011-{{ site.time | date: "%Y" }} White Peak Software Inc</rights>
   
   {% for post in site.posts limit: 20 %}
   <entry>
