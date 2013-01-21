@@ -1,0 +1,27 @@
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">actionSheet:</span><span class="p">(</span><span class="n">UIActionSheet</span> <span class="o">*</span><span class="p">)</span><span class="nv">actionSheet</span> <span class="nf">clickedButtonAtIndex:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">buttonIndex</span>
+<span class="p">{</span>
+   <span class="c1">// Do nothing if the user taps outside the action </span>
+   <span class="c1">// sheet (thus closing the popover containing the</span>
+   <span class="c1">// action sheet).</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">buttonIndex</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span><span class="p">;</span>
+   <span class="p">}</span>
+   
+   <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">names</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSMutableArray</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+   
+   <span class="k">if</span> <span class="p">([</span><span class="n">actionSheet</span> <span class="n">tag</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="p">[</span><span class="n">names</span> <span class="nl">addObject:</span><span class="s">@&quot;confirmDeletePhotoAlbum&quot;</span><span class="p">];</span>
+      
+   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="kt">BOOL</span> <span class="n">hasCamera</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImagePickerController</span> <span class="nl">isSourceTypeAvailable:</span><span class="n">UIImagePickerControllerSourceTypeCamera</span><span class="p">];</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">hasCamera</span><span class="p">)</span> <span class="p">[</span><span class="n">names</span> <span class="nl">addObject:</span><span class="s">@&quot;presentCamera&quot;</span><span class="p">];</span>
+      <span class="p">[</span><span class="n">names</span> <span class="nl">addObject:</span><span class="s">@&quot;presentPhotoLibrary&quot;</span><span class="p">];</span>
+   <span class="p">}</span>
+   
+   <span class="kt">SEL</span> <span class="n">selector</span> <span class="o">=</span> <span class="n">NSSelectorFromString</span><span class="p">([</span><span class="n">names</span> <span class="nl">objectAtIndex:</span><span class="n">buttonIndex</span><span class="p">]);</span>
+<span class="cp">#pragma clang diagnostic push</span>
+<span class="cp">#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;</span>
+   <span class="p">[</span><span class="n">self</span> <span class="nl">performSelector:</span><span class="n">selector</span><span class="p">];</span>
+<span class="cp">#pragma clang diagnostic pop</span>
+<span class="p">}</span>
+</pre></div>

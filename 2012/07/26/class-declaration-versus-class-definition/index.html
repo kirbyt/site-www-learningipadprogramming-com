@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="/styles/inspire/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" media="all" href="/styles/inspire/css/effects.css" />
 <link rel="stylesheet" type="text/css" media="all" href="/styles/inspire/css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/styles/syntax.css" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed/index.html" />
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans%7CDroid+Serif:italic' rel='stylesheet' type='text/css' />
       
@@ -91,6 +92,18 @@ jQuery(function() {
                 </ul>               
             </div><!-- /.col-full -->
         </div><!-- /#header -->
+
+        <div id="breadcrumb">
+    <div class="col-full">
+        <div class="fl">You are here: <a href="/index.html">Home</a> &raquo; <strong>Class Declaration versus Class Definition</strong></div>
+        <a class="subscribe fr" href="/atom.xml">
+            <img src="/styles/inspire/images/ico-rss.png" alt="Subscribe" class="rss" />
+        </a>        
+    </div>
+</div> 
+
+        
+        
 	</div><!-- /#top -->
 
     <div id="content">
@@ -110,7 +123,7 @@ jQuery(function() {
         <div class="entry">
             <p>A reader sent me an outstanding question. He pointed out that in chapter 4 of Learning iPad Programming, I wrote:</p>
 
-<p>&#8220;To define a class you use @interface. In Listing 4.2, the CoinTosser class definition starts with the line @interface CoinTosser : NSObject. @interface is Objective-C syntax that tells the compiler that what follows is a class definition. CoinTosser is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
+<p>&#8220;To define a class you use <code>@interface</code>. In Listing 4.2, the <code>CoinTosser</code> class definition starts with the line <code>@interface CoinTosser : NSObject</code>. <code>@interface</code> is Objective-C syntax that tells the compiler that what follows is a class definition. <code>CoinTosser</code> is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
 
 <p>The reader asked, &#8220;Shouldn&#8217;t class definition be class declaration?&#8221; It turns out, class definition is correct.</p>
 
@@ -123,9 +136,11 @@ jQuery(function() {
 <p><code>@interface className</code> and its contents defines the class, so it&#8217;s a class definition. It tells the compiler all it needs to know about the class, how to create an instance, what properties and methods are contained in the class, and so on.</p>
 
 <p>Here are a couple of additional links that explain the differences as seen in C and C++:</p>
+
 <ul>
-<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition</a></li>
-<li><a href='http://www.cprogramming.com/declare_vs_define.html'>http://www.cprogramming.com/declare_vs_define.html</a></li>
+<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>Difference between a class declaration and a class definition</a></li>
+
+<li><a href='http://www.cprogramming.com/declare_vs_define.html'>Declare vs Define in C and C++</a></li>
 </ul>
         </div>
 
@@ -215,6 +230,23 @@ jQuery(function() {
                 </div>
                 <div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		
                     <ul>
+                        <li class='category'><a href='/category/announcements/'>announcements (5)</a></li>
+<li class='category'><a href='/category/appsterdam/'>appsterdam (1)</a></li>
+<li class='category'><a href='/category/books/'>books (7)</a></li>
+<li class='category'><a href='/category/debugging/'>debugging (1)</a></li>
+<li class='category'><a href='/category/events/'>events (1)</a></li>
+<li class='category'><a href='/category/general/'>general (2)</a></li>
+<li class='category'><a href='/category/getting-started/'>getting-started (2)</a></li>
+<li class='category'><a href='/category/ios/'>ios (6)</a></li>
+<li class='category'><a href='/category/learn-ipad-book/'>learn-ipad-book (13)</a></li>
+<li class='category'><a href='/category/livelessons/'>livelessons (2)</a></li>
+<li class='category'><a href='/category/objective-c/'>objective-c (1)</a></li>
+<li class='category'><a href='/category/osx/'>osx (1)</a></li>
+<li class='category'><a href='/category/photowheel/'>photowheel (2)</a></li>
+<li class='category'><a href='/category/video/'>video (5)</a></li>
+<li class='category'><a href='/category/wwdc/'>wwdc (1)</a></li>
+<li class='category'><a href='/category/xcode/'>xcode (3)</a></li>
+
             		</ul>
                 </div>    
             </div>

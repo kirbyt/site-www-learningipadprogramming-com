@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="/styles/inspire/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" media="all" href="/styles/inspire/css/effects.css" />
 <link rel="stylesheet" type="text/css" media="all" href="/styles/inspire/css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/styles/syntax.css" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed/index.html" />
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans%7CDroid+Serif:italic' rel='stylesheet' type='text/css' />
       
@@ -91,6 +92,18 @@ jQuery(function() {
                 </ul>               
             </div><!-- /.col-full -->
         </div><!-- /#header -->
+
+        <div id="breadcrumb">
+    <div class="col-full">
+        <div class="fl">You are here: <a href="/index.html">Home</a> &raquo; <strong>Blog</strong></div>
+        <a class="subscribe fr" href="/atom.xml">
+            <img src="/styles/inspire/images/ico-rss.png" alt="Subscribe" class="rss" />
+        </a>        
+    </div>
+</div> 
+
+        
+        
 	</div><!-- /#top -->
 
     <div id="content">
@@ -114,7 +127,7 @@ jQuery(function() {
         <div class="entry">
             <p>A reader sent me an outstanding question. He pointed out that in chapter 4 of Learning iPad Programming, I wrote:</p>
 
-<p>&#8220;To define a class you use @interface. In Listing 4.2, the CoinTosser class definition starts with the line @interface CoinTosser : NSObject. @interface is Objective-C syntax that tells the compiler that what follows is a class definition. CoinTosser is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
+<p>&#8220;To define a class you use <code>@interface</code>. In Listing 4.2, the <code>CoinTosser</code> class definition starts with the line <code>@interface CoinTosser : NSObject</code>. <code>@interface</code> is Objective-C syntax that tells the compiler that what follows is a class definition. <code>CoinTosser</code> is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
 
 <p>The reader asked, &#8220;Shouldn&#8217;t class definition be class declaration?&#8221; It turns out, class definition is correct.</p>
 
@@ -127,9 +140,11 @@ jQuery(function() {
 <p><code>@interface className</code> and its contents defines the class, so it&#8217;s a class definition. It tells the compiler all it needs to know about the class, how to create an instance, what properties and methods are contained in the class, and so on.</p>
 
 <p>Here are a couple of additional links that explain the differences as seen in C and C++:</p>
+
 <ul>
-<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition</a></li>
-<li><a href='http://www.cprogramming.com/declare_vs_define.html'>http://www.cprogramming.com/declare_vs_define.html</a></li>
+<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>Difference between a class declaration and a class definition</a></li>
+
+<li><a href='http://www.cprogramming.com/declare_vs_define.html'>Declare vs Define in C and C++</a></li>
 </ul>
         </div>
 
@@ -169,7 +184,7 @@ jQuery(function() {
 
         <div class="entry">
             <p>A couple of weeks ago I had the pleasure of visiting Amsterdam with my family. Amsterdam is a beautiful city with great restaurants and super friendly people. Getting around Amsterdam is really easy. We walked most of the time, but found the trains to be convenient when we wanted to return to the hotel quickly.</p>
-<img border='0' width='125' height='96' src='http://learnipadprogramming.com/files/2012/06/appsterdam-logo-smaller.png' alt='Appsterdam logo smaller' style='float:left' /><a href='http://mur.mu.rs/?p=196'>What is Appsterdam</a>
+<img height='96' alt='Appsterdam logo smaller' src='http://learnipadprogramming.com/files/2012/06/appsterdam-logo-smaller.png' style='float:left' border='0' width='125' /><a href='http://mur.mu.rs/?p=196'>What is Appsterdam</a>
 <p>As luck would have it, I had an opportunity to speak at one of the Appsterdam luncheons, and I attended a social gathering later that evening. This gave me a chance to meeting many of the local Appsterdamers, which to my surprise are from all over the world. In fact, I met a number of Americans who now call Amsterdam home. Meeting this international group of app makers proved to me that Amsterdam is not only a great place to live, it&#8217;s a great place to run an indie software company. And if it wasn&#8217;t for my love and desire to live in a ski town, I might try to convenience my wife we need to move there. While moving there is not an option for us, extended stays most certainly are, and I hope to make it happen (hint, hint to my wife).</p>
 
 <p>While traveling abroad is not easy for everyone - the airfare alone can be costly - there is a way to get a taste of Appsterdam right here in the States. In San Francisco during next week&#8217;s WWDC, Appsterdam will be hosting the <a href='http://www.robelkin.com/wwdc/'>Appsterdam WWDC HQ</a>, a free, week long co-working space (June 11 through 15) and daily talks from <a href='http://www.robelkin.com/wwdc/speakers.html'>outstanding speakers</a>. Appsterdam WWDC HQ is open to all. A WWDC badge is not required.</p>
@@ -192,49 +207,78 @@ jQuery(function() {
         </p>
 
         <div class="entry">
-            <p>In Listing 16.22 from the Learning iPad Programming book, I show how to invoke a method using -performSelector: where the selector is determined at runtime from a set of names stored in an NSArray. The implementation in Listing 16.22 could have been done a number of different ways, but I chose this approach to show how to set and perform a selector at runtime. However, the code produces a compiler warning message when ARC is used.</p>
+            <p>In Listing 16.22 from the Learning iPad Programming book, I show how to invoke a method using <code>-performSelector:</code> where the selector is determined at runtime from a set of names stored in an NSArray. The implementation in Listing 16.22 could have been done a number of different ways, but I chose this approach to show how to set and perform a selector at runtime. However, the code produces a compiler warning message when ARC is used.</p>
 
 <p>Because ARC is used and the selector is determined at run, the compiler generates a &#8220;possible memory leak&#8221; warning message. This warning is legitimate given that the selector is unknown at compile time and ARC is being used to manage memory.</p>
 
 <p>At the time the code in Listing 16.22 was written, there was no way to ignore this warning message. That can be a good thing since explicitly ignoring a warning message from the compiler can be a bad thing. 99.9% of the time you want to fix or refactor your code so the warning message goes away. However, there are times when you know more than the compiler does, and the code in Listing 16.22 is one of those rare times.</p>
 
-<p>In this particular case, each selector that can potentially be called will not cause a memory leak because each one returns a void. The compiler doesn&#8217;t know this, but you (as the programmer) know this to be true. So this warning message can safely be ignored. But how do you tell the compiler to ignore the -performSelector possible memory leak warning so you don&#8217;t have to see the warning message each time you compile the project?</p>
+<p>In this particular case, each selector that can potentially be called will not cause a memory leak because each one returns a void. The compiler doesn&#8217;t know this, but you (as the programmer) know this to be true. So this warning message can safely be ignored. But how do you tell the compiler to ignore the <code>-performSelector:</code> possible memory leak warning so you don&#8217;t have to see the warning message each time you compile the project?</p>
 
-<p>You can use tell clang to ignore the -performSelector leak warning by wrapping the -performSelector: call with a set of #pragma statements that temporarily ignore the warning for the code included in the block. Here is an example:</p>
-
-<p><span>objc</span></p>
-
-<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
-
-<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
-
-<p><span>self performSelector:selector</span>;</p>
-
-<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
-
-<p><span>/objc</span></p>
-
+<p>You can use tell clang to ignore the -performSelector leak warning by wrapping the <code>-performSelector:</code> call with a set of <code>#pragma</code> statements that temporarily ignore the warning for the code included in the block. Here is an example:</p>
+<div class='bogus-wrapper'><notextile><div class='code'> <div class='highlight'><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class='cp'>#pragma clang diagnostic push</span>
+</span><span class='line'><span class='cp'>#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;</span>
+</span><span class='line'>   <span class='p'>[</span><span class='n'>self</span> <span class='nl'>performSelector:</span><span class='n'>selector</span><span class='p'>];</span>
+</span><span class='line'><span class='cp'>#pragma clang diagnostic pop</span>
+</span></code></pre></td></tr></table></div></div></notextile></div>
 <p>So the code causing the warning message in Listing 16.22 for the PhotoWheel app now looks like this:</p>
-
-<p><span>objc highlight=&#8221;22,23-25&#8221;</span> - (void)actionSheet:(UIActionSheet <em>)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex { // Do nothing if the user taps outside the action // sheet (thus closing the popover containing the // action sheet). if (buttonIndex &#60; 0) { return; }</em></p>
-
-<p>NSMutableArray <em>names = <span><span>NSMutableArray alloc</span> init</span>;</em></p>
-
-<p>if (<span>actionSheet tag</span> == 0) { <span>names addObject:@&#34;confirmDeletePhotoAlbum&#34;</span>;</p>
-
-<p>} else { BOOL hasCamera = <span>UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera</span>; if (hasCamera) <span>names addObject:@&#34;presentCamera&#34;</span>; <span>names addObject:@&#34;presentPhotoLibrary&#34;</span>; }</p>
-
-<p>SEL selector = NSSelectorFromString(<span>names objectAtIndex:buttonIndex</span>);</p>
-
-<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
-
-<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
-
-<p><span>self performSelector:selector</span>;</p>
-
-<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
-
-<p>} <span>/objc</span></p>
+<div class='bogus-wrapper'><notextile><div class='code'> <div class='highlight'><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class='k'>-</span> <span class='p'>(</span><span class='kt'>void</span><span class='p'>)</span><span class='nf'>actionSheet:</span><span class='p'>(</span><span class='n'>UIActionSheet</span> <span class='o'>*</span><span class='p'>)</span><span class='nv'>actionSheet</span> <span class='nf'>clickedButtonAtIndex:</span><span class='p'>(</span><span class='n'>NSInteger</span><span class='p'>)</span><span class='nv'>buttonIndex</span>
+</span><span class='line'><span class='p'>{</span>
+</span><span class='line'>   <span class='c1'>// Do nothing if the user taps outside the action </span>
+</span><span class='line'>   <span class='c1'>// sheet (thus closing the popover containing the</span>
+</span><span class='line'>   <span class='c1'>// action sheet).</span>
+</span><span class='line'>   <span class='k'>if</span> <span class='p'>(</span><span class='n'>buttonIndex</span> <span class='o'>&lt;</span> <span class='mi'>0</span><span class='p'>)</span> <span class='p'>{</span>
+</span><span class='line'>      <span class='k'>return</span><span class='p'>;</span>
+</span><span class='line'>   <span class='p'>}</span>
+</span><span class='line'>
+</span><span class='line'>   <span class='n'>NSMutableArray</span> <span class='o'>*</span><span class='n'>names</span> <span class='o'>=</span> <span class='p'>[[</span><span class='n'>NSMutableArray</span> <span class='n'>alloc</span><span class='p'>]</span> <span class='n'>init</span><span class='p'>];</span>
+</span><span class='line'>
+</span><span class='line'>   <span class='k'>if</span> <span class='p'>([</span><span class='n'>actionSheet</span> <span class='n'>tag</span><span class='p'>]</span> <span class='o'>==</span> <span class='mi'>0</span><span class='p'>)</span> <span class='p'>{</span>
+</span><span class='line'>      <span class='p'>[</span><span class='n'>names</span> <span class='nl'>addObject:</span><span class='s'>@&quot;confirmDeletePhotoAlbum&quot;</span><span class='p'>];</span>
+</span><span class='line'>
+</span><span class='line'>   <span class='p'>}</span> <span class='k'>else</span> <span class='p'>{</span>
+</span><span class='line'>      <span class='kt'>BOOL</span> <span class='n'>hasCamera</span> <span class='o'>=</span> <span class='p'>[</span><span class='n'>UIImagePickerController</span> <span class='nl'>isSourceTypeAvailable:</span><span class='n'>UIImagePickerControllerSourceTypeCamera</span><span class='p'>];</span>
+</span><span class='line'>      <span class='k'>if</span> <span class='p'>(</span><span class='n'>hasCamera</span><span class='p'>)</span> <span class='p'>[</span><span class='n'>names</span> <span class='nl'>addObject:</span><span class='s'>@&quot;presentCamera&quot;</span><span class='p'>];</span>
+</span><span class='line'>      <span class='p'>[</span><span class='n'>names</span> <span class='nl'>addObject:</span><span class='s'>@&quot;presentPhotoLibrary&quot;</span><span class='p'>];</span>
+</span><span class='line'>   <span class='p'>}</span>
+</span><span class='line'>
+</span><span class='line'>   <span class='kt'>SEL</span> <span class='n'>selector</span> <span class='o'>=</span> <span class='n'>NSSelectorFromString</span><span class='p'>([</span><span class='n'>names</span> <span class='nl'>objectAtIndex:</span><span class='n'>buttonIndex</span><span class='p'>]);</span>
+</span><span class='line'><span class='cp'>#pragma clang diagnostic push</span>
+</span><span class='line'><span class='cp'>#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;</span>
+</span><span class='line'>   <span class='p'>[</span><span class='n'>self</span> <span class='nl'>performSelector:</span><span class='n'>selector</span><span class='p'>];</span>
+</span><span class='line'><span class='cp'>#pragma clang diagnostic pop</span>
+</span><span class='line'><span class='p'>}</span>
+</span></code></pre></td></tr></table></div></div></notextile></div>
         </div>
 
     </div><!-- /.post -->
@@ -256,9 +300,9 @@ jQuery(function() {
 
 <p>Learning iPad Programming was written based on Xcode 4.2, so everything covered in the book, with one exception, works with Xcode 4.2 on Snow Leopard. The one exception is the &#8220;Allows External Storage&#8221; flag in Core Data. This flag is discussed in Chapter 13 on Page 308, and the flag requires Lion. Compile errors are generated if you set this flag while running on Snow Leopard. Not to worry. You can still build the app without setting this flag. The app, after all, is a sample app so for the purpose of learning it is okay to not use this flag when using Xcode 4.2 on Snow Leopard.</p>
 
-<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img border='0' width='600' height='458' src='http://learnipadprogramming.com/files/2012/03/Downloads.png' alt='Downloads' /></p>
+<p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard. <img height='458' alt='Downloads' src='/images/blog/2012-03-24/Downloads.png' border='0' width='600' /></p>
 
-<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img border='0' width='600' height='480' src='http://learnipadprogramming.com/files/2012/03/iOS-Dev-Center-Apple-Developer.png' alt='IOS Dev Center  Apple Developer' /></p>
+<p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard. <img height='480' alt='IOS Dev Center  Apple Developer' src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' border='0' width='600' /></p>
         </div>
 
     </div><!-- /.post -->
@@ -311,7 +355,7 @@ jQuery(function() {
 <p>Compare the <a href='http://ptgmedia.pearsoncmg.com/images/9780321750402/samplepages/0321750403.pdf'>sample PDF</a> and photos below then decide for yourself if the print version is suitable for you. And if by chance you happen to receive a deflective book then let me know. Send me specific page numbers, and I can request a warehouse inspection. Or send me the book, and I&#8217;ll make sure you receive a good copy.</p>
 <h2>All Feedback is Good Feedback</h2>
 <p>One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.</p>
-<img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3920.jpg' alt='IMG 3920' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3924.jpg' alt='IMG 3924' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3926.jpg' alt='IMG 3926' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3928.jpg' alt='IMG 3928' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3929.jpg' alt='IMG 3929' /><img border='0' width='600' height='450' src='http://learnipadprogramming.com/files/2012/03/IMG_3933.jpg' alt='IMG 3933' />
+<img height='450' alt='IMG 3920' src='/images/blog/2012-03-24/IMG_3920.jpg' border='0' width='600' /><img height='450' alt='IMG 3924' src='/images/blog/2012-03-24/IMG_3924.jpg' border='0' width='600' /><img height='450' alt='IMG 3926' src='/images/blog/2012-03-24/IMG_3926.jpg' border='0' width='600' /><img height='450' alt='IMG 3928' src='/images/blog/2012-03-24/IMG_3928.jpg' border='0' width='600' /><img height='450' alt='IMG 3929' src='/images/blog/2012-03-24/IMG_3929.jpg' border='0' width='600' /><img height='450' alt='IMG 3933' src='/images/blog/2012-03-24/IMG_3933.jpg' border='0' width='600' />
         </div>
 
     </div><!-- /.post -->
@@ -347,7 +391,7 @@ jQuery(function() {
         </p>
 
         <div class="entry">
-            <a href='http://bit.ly/ipadlivelessons'><img border='0' width='145' height='174' src='http://my.safaribooksonline.com/images/9780132981163/9780132981163_s.jpg' vspace='10' align='left' hspace='10' /></a>
+            <a href='http://bit.ly/ipadlivelessons'><img height='174' hspace='10' vspace='10' align='left' src='/images/blog/2012-03-12/9780132981163_s.jpg' border='0' width='145' /></a>
 <p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
 
 <p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;subid=&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>
@@ -496,6 +540,23 @@ jQuery(function() {
                 </div>
                 <div id="categories-3" class="widget widget_categories"><h3>Categories</h3>		
                     <ul>
+                        <li class='category'><a href='/category/announcements/'>announcements (5)</a></li>
+<li class='category'><a href='/category/appsterdam/'>appsterdam (1)</a></li>
+<li class='category'><a href='/category/books/'>books (7)</a></li>
+<li class='category'><a href='/category/debugging/'>debugging (1)</a></li>
+<li class='category'><a href='/category/events/'>events (1)</a></li>
+<li class='category'><a href='/category/general/'>general (2)</a></li>
+<li class='category'><a href='/category/getting-started/'>getting-started (2)</a></li>
+<li class='category'><a href='/category/ios/'>ios (6)</a></li>
+<li class='category'><a href='/category/learn-ipad-book/'>learn-ipad-book (13)</a></li>
+<li class='category'><a href='/category/livelessons/'>livelessons (2)</a></li>
+<li class='category'><a href='/category/objective-c/'>objective-c (1)</a></li>
+<li class='category'><a href='/category/osx/'>osx (1)</a></li>
+<li class='category'><a href='/category/photowheel/'>photowheel (2)</a></li>
+<li class='category'><a href='/category/video/'>video (5)</a></li>
+<li class='category'><a href='/category/wwdc/'>wwdc (1)</a></li>
+<li class='category'><a href='/category/xcode/'>xcode (3)</a></li>
+
             		</ul>
                 </div>    
             </div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: photowheel | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/photowheel/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-20T01:59:37-05:00</updated>
+  <updated>2013-01-21T02:25:53-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,49 +17,81 @@
     <link href="http://www.learningipadprogramming.com/2012/04/03/how-to-ignore-performselector-leak-warning/"/>
     <updated>2012-04-03T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/04/03/how-to-ignore-performselector-leak-warning</id>
-    <content type="html"><![CDATA[<p>In Listing 16.22 from the Learning iPad Programming book, I show how to invoke a method using -performSelector: where the selector is determined at runtime from a set of names stored in an NSArray. The implementation in Listing 16.22 could have been done a number of different ways, but I chose this approach to show how to set and perform a selector at runtime. However, the code produces a compiler warning message when ARC is used.</p>
+    <content type="html"><![CDATA[<p>In Listing 16.22 from the Learning iPad Programming book, I show how to invoke a method using <code>-performSelector:</code> where the selector is determined at runtime from a set of names stored in an NSArray. The implementation in Listing 16.22 could have been done a number of different ways, but I chose this approach to show how to set and perform a selector at runtime. However, the code produces a compiler warning message when ARC is used.</p>
 
 <p>Because ARC is used and the selector is determined at run, the compiler generates a &#8220;possible memory leak&#8221; warning message. This warning is legitimate given that the selector is unknown at compile time and ARC is being used to manage memory.</p>
 
 <p>At the time the code in Listing 16.22 was written, there was no way to ignore this warning message. That can be a good thing since explicitly ignoring a warning message from the compiler can be a bad thing. 99.9% of the time you want to fix or refactor your code so the warning message goes away. However, there are times when you know more than the compiler does, and the code in Listing 16.22 is one of those rare times.</p>
 
-<p>In this particular case, each selector that can potentially be called will not cause a memory leak because each one returns a void. The compiler doesn&#8217;t know this, but you (as the programmer) know this to be true. So this warning message can safely be ignored. But how do you tell the compiler to ignore the -performSelector possible memory leak warning so you don&#8217;t have to see the warning message each time you compile the project?</p>
+<p>In this particular case, each selector that can potentially be called will not cause a memory leak because each one returns a void. The compiler doesn&#8217;t know this, but you (as the programmer) know this to be true. So this warning message can safely be ignored. But how do you tell the compiler to ignore the <code>-performSelector:</code> possible memory leak warning so you don&#8217;t have to see the warning message each time you compile the project?</p>
 
-<p>You can use tell clang to ignore the -performSelector leak warning by wrapping the -performSelector: call with a set of #pragma statements that temporarily ignore the warning for the code included in the block. Here is an example:</p>
+<p>You can use tell clang to ignore the -performSelector leak warning by wrapping the <code>-performSelector:</code> call with a set of <code>#pragma</code> statements that temporarily ignore the warning for the code included in the block. Here is an example:</p>
 
-<p><span>objc</span></p>
-
-<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
-
-<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
-
-<p><span>self performSelector:selector</span>;</p>
-
-<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
-
-<p><span>/objc</span></p>
+<p><div class='bogus-wrapper'><notextile><div class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_push</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">push</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_ignored_warcperformselectorleaks</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">ignored</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">8220</span><span class="p">;</span><span class="o">-</span><span class="n">Warc</span><span class="o">-</span><span class="n">performSelector</span><span class="o">-</span><span class="n">leaks</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">self</span> <span class="nl">performSelector:</span><span class="n">selector</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_pop</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">pop</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></div></notextile></div></p>
 
 <p>So the code causing the warning message in Listing 16.22 for the PhotoWheel app now looks like this:</p>
 
-<p><span>objc highlight=&#8221;22,23-25&#8221;</span> - (void)actionSheet:(UIActionSheet <em>)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex { // Do nothing if the user taps outside the action // sheet (thus closing the popover containing the // action sheet). if (buttonIndex &#60; 0) { return; }</em></p>
-
-<p>NSMutableArray <em>names = <span><span>NSMutableArray alloc</span> init</span>;</em></p>
-
-<p>if (<span>actionSheet tag</span> == 0) { <span>names addObject:@&#34;confirmDeletePhotoAlbum&#34;</span>;</p>
-
-<p>} else { BOOL hasCamera = <span>UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera</span>; if (hasCamera) <span>names addObject:@&#34;presentCamera&#34;</span>; <span>names addObject:@&#34;presentPhotoLibrary&#34;</span>; }</p>
-
-<p>SEL selector = NSSelectorFromString(<span>names objectAtIndex:buttonIndex</span>);</p>
-
-<h1 id='pragma_clang_diagnostic_push'>pragma clang diagnostic push</h1>
-
-<h1 id='pragma_clang_diagnostic_ignored_warcperformselectorleaks'>pragma clang diagnostic ignored &#34;-Warc-performSelector-leaks&#34;</h1>
-
-<p><span>self performSelector:selector</span>;</p>
-
-<h1 id='pragma_clang_diagnostic_pop'>pragma clang diagnostic pop</h1>
-
-<p>} <span>/objc</span></p>]]></content>
+<p><div class='bogus-wrapper'><notextile><div class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">actionSheet:</span><span class="p">(</span><span class="n">UIActionSheet</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span><span class="n">actionSheet</span> <span class="nl">clickedButtonAtIndex:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">buttonIndex</span> <span class="p">{</span> <span class="c1">// Do nothing if the user taps outside the action // sheet (thus closing the popover containing the // action sheet). if (buttonIndex &amp;lt; 0) { return; }&lt;/em&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">NSMutableArray</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="n">names</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">NSMutableArray</span> <span class="n">alloc</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span> <span class="n">init</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">if</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">actionSheet</span> <span class="n">tag</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">names</span> <span class="nl">addObject:</span><span class="err">@</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="n">confirmDeletePhotoAlbum</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="kt">BOOL</span> <span class="n">hasCamera</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">UIImagePickerController</span> <span class="nl">isSourceTypeAvailable:</span><span class="n">UIImagePickerControllerSourceTypeCamera</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">hasCamera</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">names</span> <span class="nl">addObject:</span><span class="err">@</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="n">presentCamera</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">names</span> <span class="nl">addObject:</span><span class="err">@</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="n">presentPhotoLibrary</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span> <span class="p">}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="kt">SEL</span> <span class="n">selector</span> <span class="o">=</span> <span class="n">NSSelectorFromString</span><span class="p">(</span><span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">names</span> <span class="nl">objectAtIndex:</span><span class="n">buttonIndex</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">);</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_push</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">push</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_ignored_warcperformselectorleaks</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">ignored</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">8220</span><span class="p">;</span><span class="o">-</span><span class="n">Warc</span><span class="o">-</span><span class="n">performSelector</span><span class="o">-</span><span class="n">leaks</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">8221</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="n">self</span> <span class="nl">performSelector:</span><span class="n">selector</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span> <span class="kt">id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">pragma_clang_diagnostic_pop</span><span class="err">&#39;</span><span class="o">&gt;</span><span class="n">pragma</span> <span class="n">clang</span> <span class="n">diagnostic</span> <span class="n">pop</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></div></notextile></div></p>]]></content>
   </entry>
   
   <entry>

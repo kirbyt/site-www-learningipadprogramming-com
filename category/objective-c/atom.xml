@@ -4,7 +4,7 @@
   <title><![CDATA[Category: objective-c | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/objective-c/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-20T01:59:37-05:00</updated>
+  <updated>2013-01-21T02:25:53-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -19,7 +19,7 @@
     <id>http://www.learningipadprogramming.com/2012/07/26/class-declaration-versus-class-definition</id>
     <content type="html"><![CDATA[<p>A reader sent me an outstanding question. He pointed out that in chapter 4 of Learning iPad Programming, I wrote:</p>
 
-<p>&#8220;To define a class you use @interface. In Listing 4.2, the CoinTosser class definition starts with the line @interface CoinTosser : NSObject. @interface is Objective-C syntax that tells the compiler that what follows is a class definition. CoinTosser is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
+<p>&#8220;To define a class you use <code>@interface</code>. In Listing 4.2, the <code>CoinTosser</code> class definition starts with the line <code>@interface CoinTosser : NSObject</code>. <code>@interface</code> is Objective-C syntax that tells the compiler that what follows is a class definition. <code>CoinTosser</code> is the name of the class. The colon character separates the class name from the name of the superclass. The new class inherits properties and methods from the superclass. The class definition starts with @interface and ends at the first occurrence of @end. This tells the compiler it has reached the end of the class definition.&#8221;</p>
 
 <p>The reader asked, &#8220;Shouldn&#8217;t class definition be class declaration?&#8221; It turns out, class definition is correct.</p>
 
@@ -32,9 +32,11 @@
 <p><code>@interface className</code> and its contents defines the class, so it&#8217;s a class definition. It tells the compiler all it needs to know about the class, how to create an instance, what properties and methods are contained in the class, and so on.</p>
 
 <p>Here are a couple of additional links that explain the differences as seen in C and C++:</p>
+
 <ul>
-<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition</a></li>
-<li><a href='http://www.cprogramming.com/declare_vs_define.html'>http://www.cprogramming.com/declare_vs_define.html</a></li>
+<li><a href='http://www.daniweb.com/software-development/cpp/threads/143198/difference-between-a-class-declaration-and-a-class-definition'>Difference between a class declaration and a class definition</a></li>
+
+<li><a href='http://www.cprogramming.com/declare_vs_define.html'>Declare vs Define in C and C++</a></li>
 </ul>]]></content>
   </entry>
   
