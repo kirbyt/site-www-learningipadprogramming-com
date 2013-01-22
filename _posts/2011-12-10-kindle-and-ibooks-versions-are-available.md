@@ -7,7 +7,7 @@ categories:
 
 ---
 
-The <a href="http://amzn.to/ipadprogbook-kindle">Kindle</a> and iBooks Store versions of Learning iPad Programming are now available for purchase and download. This is exciting but at the same time a little disappointing for me. Why? I'm not happy with some of the formatting errors found in the digital version of the book. The two most obvious formatting errors are shortcut keys and source code listings.
+The [Kindle][1] and iBooks Store versions of Learning iPad Programming are now available for purchase and download. This is exciting but at the same time a little disappointing for me. Why? I'm not happy with some of the formatting errors found in the digital version of the book. The two most obvious formatting errors are shortcut keys and source code listings.
 
 Something strange happened with the shortcut keys. Tom and I were asked to use the Command symbol (⌘) instead of typing the word Command. For example, Option-⌘-4 instead of Command-Option-4 (which was my style before writing this book). Two things happened with the Command symbol. First, in cases were it is displayed in the epub version of the book, the symbol floats up high. In the Kindle version, the symbol appears on its own line. But worse than this is when the letter "c" is displayed in place of the Command symbol.
 
@@ -19,6 +19,9 @@ So I'm exciting that the book is now available (at least in digital format), but
 
 To those of you who have (or will) buy a digital copy of the book, I apologize for the formatting issues with shortcut keys and source code listings. I have made the publisher aware of the issues, and I can only hope that a "fix" can be made. (This is my first book, and my first book with this publisher, so I'm not sure what can and cannot be done with regard to fixing the formatting problems.)
 
-<strong>Update:</strong> Tom pointed out to me that the source code format looks better if you reduce the font size in your ebook reader. So give that a try if you are having trouble reading through the source code listings.
+**Update:** Tom pointed out to me that the source code format looks better if you reduce the font size in your ebook reader. So give that a try if you are having trouble reading through the source code listings.
 
-<strong>Update:</strong> See <a href="/2011/12/16/kindle-and-ibooks-stores-versions-will-be-available-soon/">here</a> for the latest update.
+**Update:** See [here][2] for the latest update.
+
+[1]: http://amzn.to/ipadprogbook-kindle
+[2]: /2011/12/16/kindle-and-ibooks-stores-versions-will-be-available-soon

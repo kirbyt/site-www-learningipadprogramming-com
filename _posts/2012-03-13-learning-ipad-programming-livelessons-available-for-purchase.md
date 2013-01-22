@@ -10,4 +10,7 @@ categories:
 
 ---
 
-I learned today that the <a href="http://www.informit.com/store/product.aspx?isbn=0321821661">Learning iPad Programming LiveLessons</a> videos are available for purchase from the <a href="http://www.informit.com/store/product.aspx?isbn=0321821661">InformIT web site</a>. So you don't need a Safari Books Online account to purchase and enjoy these training videos.
+I learned today that the [Learning iPad Programming LiveLessons][1] videos are available for purchase from the [InformIT web site][2]. So you don't need a Safari Books Online account to purchase and enjoy these training videos.
+
+[1]: http://www.informit.com/store/product.aspx?isbn=0321821661
+[2]: http://www.informit.com/

@@ -7,4 +7,7 @@ categories:
 
 ---
 
-PhotoWheel is now available for <a href="http://bit.ly/photowheelapp">download from the App Store</a>, and it has its very own web site. Visit <a href="http://photowheelapp.com/">photowheelapp.com</a> to learn more about the app from the book Learning iPad Programming.
+PhotoWheel is now available for [download from the App Store][1], and it has its very own web site. Visit [photowheelapp.com][2] to learn more about the app from the book Learning iPad Programming.
+
+[1]: http://bit.ly/photowheelapp
+[2]: http://photowheelapp.com/
