@@ -4,7 +4,7 @@
   <title><![CDATA[Category: debugging | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/debugging/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-22T16:57:35-05:00</updated>
+  <updated>2013-01-22T17:04:10-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -21,7 +21,7 @@
 
 <p>To set a breakpoint on all exceptions, go to the Breakpoint navigator and click the + button found in the lower left corner. You can set the breakpoint for All, Objective-C, or C++ exceptions. You can also set the break option to On Throw or On Catch. The default settings (All exceptions and On Throw) is all you need to see the offending line of code.</p>
 
-<p><img src='/images/blog/2011-12-10/ExceptionBreakpoint-1.png' alt='ExceptionBreakpoint' /></p>]]></content>
+<p><img alt='ExceptionBreakpoint' src='/images/blog/2011-12-10/ExceptionBreakpoint-1.png' /></p>]]></content>
   </entry>
   
 </feed>
