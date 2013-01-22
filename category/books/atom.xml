@@ -4,7 +4,7 @@
   <title><![CDATA[Category: books | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/books/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-21T10:32:31-05:00</updated>
+  <updated>2013-01-22T16:57:35-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -52,7 +52,10 @@
 <p>So I&#8217;m exciting that the book is now available (at least in digital format), but I&#8217;m also not happy about these two formatting issues.</p>
 
 <p>To those of you who have (or will) buy a digital copy of the book, I apologize for the formatting issues with shortcut keys and source code listings. I have made the publisher aware of the issues, and I can only hope that a &#8220;fix&#8221; can be made. (This is my first book, and my first book with this publisher, so I&#8217;m not sure what can and cannot be done with regard to fixing the formatting problems.)</p>
-<strong>Update:</strong><strong>Update:</strong>]]></content>
+
+<p><strong>Update:</strong> Tom pointed out to me that the source code format looks better if you reduce the font size in your ebook reader. So give that a try if you are having trouble reading through the source code listings.</p>
+
+<p><strong>Update:</strong> See <a href='/2011/12/16/kindle-and-ibooks-stores-versions-will-be-available-soon'>here</a> for the latest update.</p>]]></content>
   </entry>
   
   <entry>
@@ -61,7 +64,9 @@
     <updated>2011-09-09T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2011/09/09/manuscript-is-complete</id>
     <content type="html"><![CDATA[<p>This morning I made a <a href='http://twitter.com/#!/kirbyt/status/112092725574242304'>tweet</a> that I&#8217;ve being waiting to do for a verify long time.</p>
-<a href='http://twitter.com/#!/kirbyt/status/112092725574242304'><img border='0' height='196' width='600' alt='Tweet manuscriptcomplete' src='/images/blog/2011-09-09/tweet-manuscriptcomplete.png' /></a>
+
+<p><a href='http://twitter.com/#!/kirbyt/status/112092725574242304'><img src='/images/blog/2011-09-09/tweet-manuscriptcomplete.png' alt='' /></a></p>
+
 <p>Yep, the manuscript is complete. A part of me thought this day would never come. But it&#8217;s here and I couldn&#8217;t be happier. Tom and I will be doing some edits over the next few weeks then the book heads off to the printers.</p>
 
 <p>With the writing part finally out of the way, I can turn my attention to this web site. I have a number of how to blog posts queued up that will expand on the book. Stay tune. The best is yet to come.</p>]]></content>
@@ -74,7 +79,7 @@
     <id>http://www.learningipadprogramming.com/2011/09/03/welcome-tom-harrington</id>
     <content type="html"><![CDATA[<p>I have been working so hard on completing the book that I forgot to officially welcome Tom Harrington as co-author of Learning iPad Programming.</p>
 
-<p>I&#8217;ve known Tom for a couple of years now. Our paths have crossed multiple times at conferences and on client projects. At WWDC this year, I accepted the reality that I cannot complete the book this summer without some help. Tom quickly came to mind as someone perfect to co-author the book with me. I already had a sense of what it&#8217;s like working with Tom, but even better than that, Tom is already a published author. He has co-authored two other iOS related books: <a href='http://www.amazon.com/gp/product/1430224037/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1430224037'>iPhone Advanced Projects</a><img border='0' height='1' width='1' style='border:none !important;margin:0px !important' alt='' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=1430224037&amp;camp=217145&amp;creative=399369' /> and most recently <a href='http://www.amazon.com/gp/product/0321670426/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321670426'>Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch</a><img border='0' height='1' width='1' style='border:none !important;margin:0px !important' alt='' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=0321670426&amp;camp=217145&amp;creative=399369' />.</p>
+<p>I&#8217;ve known Tom for a couple of years now. Our paths have crossed multiple times at conferences and on client projects. At WWDC this year, I accepted the reality that I cannot complete the book this summer without some help. Tom quickly came to mind as someone perfect to co-author the book with me. I already had a sense of what it&#8217;s like working with Tom, but even better than that, Tom is already a published author. He has co-authored two other iOS related books: <a href='http://www.amazon.com/gp/product/1430224037/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1430224037'>iPhone Advanced Projects</a><img src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=1430224037&amp;camp=217145&amp;creative=399369' height='1' border='0' alt='' style='border:none !important;margin:0px !important' width='1' /> and most recently <a href='http://www.amazon.com/gp/product/0321670426/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321670426'>Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch</a><img src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=0321670426&amp;camp=217145&amp;creative=399369' height='1' border='0' alt='' style='border:none !important;margin:0px !important' width='1' />.</p>
 
 <p>Words can&#8217;t express my gratitude towards Tom for stepping up and helping me complete the book. Tom and I have already been working together on the book for the last couple of months, and the manuscript is nearly complete.</p>
 
