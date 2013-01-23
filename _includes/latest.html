@@ -13,7 +13,7 @@
                             <span class="small">on</span> <span class="post-date">July 26, 2012</span>
                             <span class="small">in</span> <span class="post-category"><a href="category/general/index.html" title="View all posts in general" rel="category tag">general</a>, <a href="category/objective-c/index.html" title="View all posts in objective-c" rel="category tag">objective-c</a></span>
                         </p>
-                        <p>A reader sent me an outstanding question. He pointed out that in chapter 4 of Learning iPad Programming, I wrote: &#8220;To define a class you ...</p>
+                        <p>{{ post.content | strip_html | truncatewords:20}}</p>
                 </div>
                 {% endfor %}
 				    
