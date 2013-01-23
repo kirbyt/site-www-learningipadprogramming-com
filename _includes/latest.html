@@ -10,8 +10,8 @@
                     	<a class="title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                         <p class="post-meta">
                             <span class="small">by</span> <span class="post-author"><a href="author/kirbyt/index.html" title="Posts by kirbyt" rel="author">kirbyt</a></span>
-                            <span class="small">on</span> <span class="post-date">July 26, 2012</span>
-                            <span class="small">in</span> <span class="post-category"><a href="category/general/index.html" title="View all posts in general" rel="category tag">general</a>, <a href="category/objective-c/index.html" title="View all posts in objective-c" rel="category tag">objective-c</a></span>
+                            <span class="small">on</span> <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                            {% if post.categories %}<span class="small">in</span> <span class="post-category">{{ post.categories | category_links }}</span>{% endif %}
                         </p>
                         <p>{{ post.content | strip_html | truncatewords:20}}</p>
                 </div>
