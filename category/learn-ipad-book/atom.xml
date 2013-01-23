@@ -4,13 +4,25 @@
   <title><![CDATA[Category: learn-ipad-book | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/learn-ipad-book/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-22T21:58:01-05:00</updated>
+  <updated>2013-01-23T06:36:12-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning iPad Programming, 2nd Edition Coming in Spring 2013]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/01/23/2edition-coming-spring-2013/"/>
+    <updated>2013-01-23T00:00:00-05:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/01/23/2edition-coming-spring-2013</id>
+    <content type="html"><![CDATA[<p>Learning iPad Programming, 2nd Edition is coming this spring. Tom and I updated the book to cover new features found in iOS 6 including collection views, <code>UIActivityViewController</code>, unwind segues, simpler iCloud syncing setup, and Cocoa Auto Layout. There&#8217;s also a new chapter on turning your iPad app into a universal app. <a href='http://my.safaribooksonline.com/9780133138702'>Rough Cuts</a> are available at Safari Books Online for those looking to get an early preview of the book.</p>
+
+<p>Also, look for an update to <span>PhotoWheel</span> coming soon in the App Store. PhotoWheel has been updated to take advantage of new features found in iOS 6. And as with the first edition, the entire source code for the App Store version of PhotoWheel is available in the <a href='https://github.com/kirbyt/PhotoWheel'>github repository</a>.</p>
+
+<p>You maybe asking yourself, &#8220;Should I buy the first edition or wait for the second edition?&#8221; If you are writing an iPad app today that must target iOS 5, then the first edition is the book for you. New features in iOS 6 such as collection views and the activity view controller are not available in iOS 5. However, if you plan to support iOS 6 and newer, then I suggest waiting until the second edition is available for purchase. Or if you like, <a href='&quot;http://www.amazon.com/gp/product/0321885716/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321885716&amp;linkCode=as2&amp;tag=whitepeaksoft-20'>pre-order Learning iPad Programming, 2nd Edition</a> from Amazon now.</p>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How To Ignore performSelector Leak Warning]]></title>
@@ -105,11 +117,11 @@
 
 <p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard.</p>
 
-<p><img src='/images/blog/2012-03-24/Downloads.png' alt='Downloads' /></p>
+<p><img alt='Downloads' src='/images/blog/2012-03-24/Downloads.png' /></p>
 
 <p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard.</p>
 
-<p><img src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' alt='iOS Dev Center Apple Developer' /></p>]]></content>
+<p><img alt='iOS Dev Center Apple Developer' src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' /></p>]]></content>
   </entry>
   
   <entry>
@@ -161,17 +173,17 @@
 
 <p>One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.</p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3920.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3920.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3924.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3924.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3926.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3926.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3928.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3928.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3929.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3929.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3933.jpg' alt='' /></p>]]></content>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3933.jpg' /></p>]]></content>
   </entry>
   
   <entry>
@@ -180,17 +192,6 @@
     <updated>2012-03-13T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/03/13/learning-ipad-programming-livelessons-available-for-purchase</id>
     <content type="html"><![CDATA[<p>I learned today that the <a href='http://www.informit.com/store/product.aspx?isbn=0321821661'>Learning iPad Programming LiveLessons</a> videos are available for purchase from the <a href='http://www.informit.com/'>InformIT web site</a>. So you don&#8217;t need a Safari Books Online account to purchase and enjoy these training videos.</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learning iPad Programming LiveLessons]]></title>
-    <link href="http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons/"/>
-    <updated>2012-03-12T00:00:00-04:00</updated>
-    <id>http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons</id>
-    <content type="html"><![CDATA[<img src='/images/blog/2012-03-12/9780132981163_s.jpg' align='left' border='0' height='174' vspace='10' width='145' hspace='10' />
-<p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
-
-<p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;amp;subid=&amp;amp;offerid=146261.1&amp;amp;type=10&amp;amp;tmpid=3909&amp;amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>]]></content>
   </entry>
   
 </feed>
