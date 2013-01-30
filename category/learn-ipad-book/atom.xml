@@ -4,13 +4,27 @@
   <title><![CDATA[Category: learn-ipad-book | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/learn-ipad-book/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-01-23T06:43:47-05:00</updated>
+  <updated>2013-01-30T11:18:00-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PhotoWheel 2 is Available for Download]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/01/30/photowheel-2-available-for-download/"/>
+    <updated>2013-01-30T00:00:00-05:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/01/30/photowheel-2-available-for-download</id>
+    <content type="html"><![CDATA[<p>The latest version of PhotoWheel, version 2, has been approved by Apple and is being processed for the App Store. This means you will be able to download the latest and greatest within the next 24-hours.</p>
+
+<p>PhotoWheel 2 has been updated with the latest code from the second edition of Learning iPad Programming, which is scheduled for release sometime in May 2013. I decided to release PhotoWheel 2 now instead of waiting until May because I thought other developers could benefit from the enhancements made to the code base.</p>
+
+<p>PhotoWheel has been re-written for iOS 6. It takes advantage of new features found in iOS 6 such as the activity view controller and collection views. Collection views, one of my favorite additions to iOS, are an welcome addition because it eliminates the need for writing a custom grid view, which was the approach used in the first edition of the book.</p>
+
+<p>Source code for the App Store version of PhotoWheel is available in the <a href='https://github.com/kirbyt/PhotoWheel'>github repository</a>. Also, the older, iOS 5 version of PhotoWheel has been tagged in the repository as <a href='https://github.com/kirbyt/PhotoWheel/tree/v1.3'>v1.3</a>.</p>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning iPad Programming, 2nd Edition Coming in Spring 2013]]></title>
@@ -117,11 +131,11 @@
 
 <p>To download Xcode 4.2 for Snow Leopard, go to <a href='https://developer.apple.com/downloads/'>https://developer.apple.com/downloads/</a> and sign in with your Apple Developer ID. In the search box, type &#8220;Xcode 4.2&#8221;. The search results will show Xcode 4.2 for Snow Leopard (see the screenshot below). Use this version of Xcode if you are still running on Snow Leopard.</p>
 
-<p><img src='/images/blog/2012-03-24/Downloads.png' alt='Downloads' /></p>
+<p><img alt='Downloads' src='/images/blog/2012-03-24/Downloads.png' /></p>
 
 <p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard.</p>
 
-<p><img src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' alt='iOS Dev Center Apple Developer' /></p>]]></content>
+<p><img alt='iOS Dev Center Apple Developer' src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' /></p>]]></content>
   </entry>
   
   <entry>
@@ -173,25 +187,17 @@
 
 <p>One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.</p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3920.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3920.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3924.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3924.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3926.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3926.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3928.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3928.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3929.jpg' alt='' /></p>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3929.jpg' /></p>
 
-<p><img src='/images/blog/2012-03-24/IMG_3933.jpg' alt='' /></p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learning iPad Programming LiveLessons Available for Purchase]]></title>
-    <link href="http://www.learningipadprogramming.com/2012/03/13/learning-ipad-programming-livelessons-available-for-purchase/"/>
-    <updated>2012-03-13T00:00:00-04:00</updated>
-    <id>http://www.learningipadprogramming.com/2012/03/13/learning-ipad-programming-livelessons-available-for-purchase</id>
-    <content type="html"><![CDATA[<p>I learned today that the <a href='http://www.informit.com/store/product.aspx?isbn=0321821661'>Learning iPad Programming LiveLessons</a> videos are available for purchase from the <a href='http://www.informit.com/'>InformIT web site</a>. So you don&#8217;t need a Safari Books Online account to purchase and enjoy these training videos.</p>]]></content>
+<p><img alt='' src='/images/blog/2012-03-24/IMG_3933.jpg' /></p>]]></content>
   </entry>
   
 </feed>
