@@ -4,7 +4,7 @@
   <title><![CDATA[Category: announcements | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/announcements/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-02-19T11:20:42-05:00</updated>
+  <updated>2013-02-19T11:26:54-05:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -25,7 +25,7 @@
     <link href="http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons/"/>
     <updated>2012-03-12T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons</id>
-    <content type="html"><![CDATA[<img hspace='10' src='/images/blog/2012-03-12/9780132981163_s.jpg' align='left' height='174' border='0' vspace='10' width='145' />
+    <content type="html"><![CDATA[<img width='145' height='174' hspace='10' vspace='10' border='0' src='/images/blog/2012-03-12/9780132981163_s.jpg' align='left' />
 <p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
 
 <p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;amp;subid=&amp;amp;offerid=146261.1&amp;amp;type=10&amp;amp;tmpid=3909&amp;amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>]]></content>
@@ -64,7 +64,7 @@
     <id>http://www.learningipadprogramming.com/2011/09/03/welcome-tom-harrington</id>
     <content type="html"><![CDATA[<p>I have been working so hard on completing the book that I forgot to officially welcome Tom Harrington as co-author of Learning iPad Programming.</p>
 
-<p>I&#8217;ve known Tom for a couple of years now. Our paths have crossed multiple times at conferences and on client projects. At WWDC this year, I accepted the reality that I cannot complete the book this summer without some help. Tom quickly came to mind as someone perfect to co-author the book with me. I already had a sense of what it&#8217;s like working with Tom, but even better than that, Tom is already a published author. He has co-authored two other iOS related books: <a href='http://www.amazon.com/gp/product/1430224037/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1430224037'>iPhone Advanced Projects</a><img src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=1430224037&amp;camp=217145&amp;creative=399369' height='1' alt='' border='0' style='border:none !important;margin:0px !important' width='1' /> and most recently <a href='http://www.amazon.com/gp/product/0321670426/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321670426'>Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch</a><img src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=0321670426&amp;camp=217145&amp;creative=399369' height='1' alt='' border='0' style='border:none !important;margin:0px !important' width='1' />.</p>
+<p>I&#8217;ve known Tom for a couple of years now. Our paths have crossed multiple times at conferences and on client projects. At WWDC this year, I accepted the reality that I cannot complete the book this summer without some help. Tom quickly came to mind as someone perfect to co-author the book with me. I already had a sense of what it&#8217;s like working with Tom, but even better than that, Tom is already a published author. He has co-authored two other iOS related books: <a href='http://www.amazon.com/gp/product/1430224037/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1430224037'>iPhone Advanced Projects</a><img style='border:none !important;margin:0px !important' width='1' height='1' border='0' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=1430224037&amp;camp=217145&amp;creative=399369' alt='' /> and most recently <a href='http://www.amazon.com/gp/product/0321670426/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321670426'>Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch</a><img style='border:none !important;margin:0px !important' width='1' height='1' border='0' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=0321670426&amp;camp=217145&amp;creative=399369' alt='' />.</p>
 
 <p>Words can&#8217;t express my gratitude towards Tom for stepping up and helping me complete the book. Tom and I have already been working together on the book for the last couple of months, and the manuscript is nearly complete.</p>
 
