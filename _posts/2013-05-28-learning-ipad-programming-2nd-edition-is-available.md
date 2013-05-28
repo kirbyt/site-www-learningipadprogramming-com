@@ -3,7 +3,8 @@ layout: post
 title: 'Learning iPad Programming, 2nd Edition, is Available'
 categories:
   - learn-ipad-book
-
+  - announcements
+  
 ---
 I'm excited to announce the second edition of [Learning iPad Programming][book] is now on sale at your favorite book store. The second edition has been updated to cover features found in iOS 6.
 
