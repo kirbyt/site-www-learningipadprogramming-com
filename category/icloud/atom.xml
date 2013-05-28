@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: icloud | Learning iPad Programming]]></title>
+  <link href="http://www.learningipadprogramming.com/category/icloud/atom.xml" rel="self"/>
+  <link href="http://www.learningipadprogramming.com/"/>
+  <updated>2013-05-28T08:49:37-04:00</updated>
+  <id>http://www.learningipadprogramming.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tom Harrington is Blogging]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/05/28/tom-harrington-is-blogging/"/>
+    <updated>2013-05-28T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/05/28/tom-harrington-is-blogging</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve done a horrible job of blogging here, but worry not. Tom Harrington has been actively blogging over at the <a href='http://www.atomicbird.com'>Atomic Bird House</a>. Be sure to checkout Tom&#8217;s series on <a href='http://www.atomicbird.com/category:iCloud'>iCloud</a> where he talks about the ugly truth of Core Data syncing using iCloud.</p>]]></content>
+  </entry>
+  
+</feed>

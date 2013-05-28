@@ -4,7 +4,7 @@
   <title><![CDATA[Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-02-19T11:39:40-05:00</updated>
+  <updated>2013-05-28T08:49:37-04:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,24 @@
   </author>
   <rights>Copyright (c) 2011-2013 White Peak Software Inc</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Tom Harrington is Blogging]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/05/28/tom-harrington-is-blogging/"/>
+    <published>2013-05-28T00:00:00-04:00</published>
+    <updated>2013-05-28T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/05/28/tom-harrington-is-blogging</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve done a horrible job of blogging here, but worry not. Tom Harrington has been actively blogging over at the <a href='http://www.atomicbird.com'>Atomic Bird House</a>. Be sure to checkout Tom&#8217;s series on <a href='http://www.atomicbird.com/category:iCloud'>iCloud</a> where he talks about the ugly truth of Core Data syncing using iCloud.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning iPad Programming, 2nd Edition, is Available]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/05/28/learning-ipad-programming-2nd-edition-is-available/"/>
+    <published>2013-05-28T00:00:00-04:00</published>
+    <updated>2013-05-28T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/05/28/learning-ipad-programming-2nd-edition-is-available</id>
+    <content type="html"><![CDATA[<p>I&#8217;m excited to announce the second edition of <a href='http://www.amazon.com/gp/product/0321885716/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321885716&amp;linkCode=as2&amp;tag=whitepeaksoft-20'>Learning iPad Programming</a> is now on sale at your favorite book store. The second edition has been updated to cover features found in iOS 6.</p>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PhotoWheel 2 is Available for Download]]></title>
@@ -88,7 +106,7 @@
     <updated>2012-06-06T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/06/06/my-appsterdam-visit</id>
     <content type="html"><![CDATA[<p>A couple of weeks ago I had the pleasure of visiting Amsterdam with my family. Amsterdam is a beautiful city with great restaurants and super friendly people. Getting around Amsterdam is really easy. We walked most of the time, but found the trains to be convenient when we wanted to return to the hotel quickly.</p>
-<img border='0' alt='Appsterdam logo smaller' style='float:left' width='125' src='/images/blog/2012-06-06/appsterdam-logo-smaller.png' height='96' />
+<img border='0' width='125' style='float:left' height='96' alt='Appsterdam logo smaller' src='/images/blog/2012-06-06/appsterdam-logo-smaller.png' />
 <p><a href='http://mur.mu.rs/?p=196'>What is Appsterdam</a>? Appsterdam is a growing movement, and organization, bringing together app makers from around the world. It&#8217;s anchored in Amsterdam, a city with a diverse population of some of the friendliest people in the world. <a href='http://www.meetup.com/Appsterdam/'>Appsterdam hosts various meet-ups</a>, from weekly luncheon lectures and to monthly family fun weekend. And they even provide a co-working space available to those living in Amsterdam as well as for those just visiting.</p>
 
 <p>As luck would have it, I had an opportunity to speak at one of the Appsterdam luncheons, and I attended a social gathering later that evening. This gave me a chance to meeting many of the local Appsterdamers, which to my surprise are from all over the world. In fact, I met a number of Americans who now call Amsterdam home. Meeting this international group of app makers proved to me that Amsterdam is not only a great place to live, it&#8217;s a great place to run an indie software company. And if it wasn&#8217;t for my love and desire to live in a ski town, I might try to convenience my wife we need to move there. While moving there is not an option for us, extended stays most certainly are, and I hope to make it happen (hint, hint to my wife).</p>
@@ -275,7 +293,7 @@
     <published>2012-03-12T00:00:00-04:00</published>
     <updated>2012-03-12T00:00:00-04:00</updated>
     <id>http://www.learningipadprogramming.com/2012/03/12/learning-ipad-programming-livelessons</id>
-    <content type="html"><![CDATA[<img border='0' width='145' vspace='10' hspace='10' src='/images/blog/2012-03-12/9780132981163_s.jpg' height='174' align='left' />
+    <content type="html"><![CDATA[<img border='0' width='145' align='left' height='174' vspace='10' hspace='10' src='/images/blog/2012-03-12/9780132981163_s.jpg' />
 <p>I should mention not all topics found in the book are covered in the LiveLessons. There simply wasn&#8217;t enough time to cover everything. Besides, covering everything may have resulted in 20 hours of videos instead of the 8 and half hours available today. Still, if you are new to iPad programming, and you are looking for an alternative way to learn iPad programming then check out <a href='http://bit.ly/ipadlivelessons'>Learning iPad Programming LiveLessons</a>.</p>
 
 <p>Attention iPad users with a Safari Books Online account: You can watch the Learning iPad Programming LiveLessons from your iPad using the <a href='http://click.linksynergy.com/fs-bin/click?id=joxFicmfXq8&amp;amp;subid=&amp;amp;offerid=146261.1&amp;amp;type=10&amp;amp;tmpid=3909&amp;amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsafari-to-go%2Fid385824712%3Fmt%3D8'>Safari To Go</a> iPad app.</p>]]></content>
@@ -379,36 +397,6 @@
     <content type="html"><![CDATA[<p>InformIT asked me to record a few video podcasts about our book Learning iPad Programming. A lot has changed since the videos were recorded. Tom has come on as a co-author, and the book was updated to focus on iOS 5. But the videos still give a good sense of what you will learn while reading the book.</p>
 
 <p>That said, here is the <a href='http://www.informit.com/podcasts/episode.aspx?e=f8790bd2-d66d-49c6-a8ec-eb0788ca6c89'>first video</a>. I will post another video in a few days.</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Manuscript is complete!!!]]></title>
-    <link href="http://www.learningipadprogramming.com/2011/09/09/manuscript-is-complete/"/>
-    <published>2011-09-09T00:00:00-04:00</published>
-    <updated>2011-09-09T00:00:00-04:00</updated>
-    <id>http://www.learningipadprogramming.com/2011/09/09/manuscript-is-complete</id>
-    <content type="html"><![CDATA[<p>This morning I made a <a href='http://twitter.com/#!/kirbyt/status/112092725574242304'>tweet</a> that I&#8217;ve being waiting to do for a verify long time.</p>
-
-<p><a href='http://twitter.com/#!/kirbyt/status/112092725574242304'><img alt='' src='/images/blog/2011-09-09/tweet-manuscriptcomplete.png' /></a></p>
-
-<p>Yep, the manuscript is complete. A part of me thought this day would never come. But it&#8217;s here and I couldn&#8217;t be happier. Tom and I will be doing some edits over the next few weeks then the book heads off to the printers.</p>
-
-<p>With the writing part finally out of the way, I can turn my attention to this web site. I have a number of how to blog posts queued up that will expand on the book. Stay tune. The best is yet to come.</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Welcome Tom Harrington]]></title>
-    <link href="http://www.learningipadprogramming.com/2011/09/03/welcome-tom-harrington/"/>
-    <published>2011-09-03T00:00:00-04:00</published>
-    <updated>2011-09-03T00:00:00-04:00</updated>
-    <id>http://www.learningipadprogramming.com/2011/09/03/welcome-tom-harrington</id>
-    <content type="html"><![CDATA[<p>I have been working so hard on completing the book that I forgot to officially welcome Tom Harrington as co-author of Learning iPad Programming.</p>
-
-<p>I&#8217;ve known Tom for a couple of years now. Our paths have crossed multiple times at conferences and on client projects. At WWDC this year, I accepted the reality that I cannot complete the book this summer without some help. Tom quickly came to mind as someone perfect to co-author the book with me. I already had a sense of what it&#8217;s like working with Tom, but even better than that, Tom is already a published author. He has co-authored two other iOS related books: <a href='http://www.amazon.com/gp/product/1430224037/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1430224037'>iPhone Advanced Projects</a><img border='0' alt='' style='border:none !important;margin:0px !important' width='1' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=1430224037&amp;camp=217145&amp;creative=399369' height='1' /> and most recently <a href='http://www.amazon.com/gp/product/0321670426/ref=as_li_ss_tl?ie=UTF8&amp;tag=whitepeaksoft-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321670426'>Core Data for iOS: Developing Data-Driven Applications for the iPad, iPhone, and iPod touch</a><img border='0' alt='' style='border:none !important;margin:0px !important' width='1' src='http://www.assoc-amazon.com/e/ir?t=&amp;l=as2&amp;o=1&amp;a=0321670426&amp;camp=217145&amp;creative=399369' height='1' />.</p>
-
-<p>Words can&#8217;t express my gratitude towards Tom for stepping up and helping me complete the book. Tom and I have already been working together on the book for the last couple of months, and the manuscript is nearly complete.</p>
-
-<p>Thanks Tom, and welcome aboard!</p>]]></content>
   </entry>
   
 </feed>

@@ -4,13 +4,21 @@
   <title><![CDATA[Category: learn-ipad-book | Learning iPad Programming]]></title>
   <link href="http://www.learningipadprogramming.com/category/learn-ipad-book/atom.xml" rel="self"/>
   <link href="http://www.learningipadprogramming.com/"/>
-  <updated>2013-02-19T11:39:40-05:00</updated>
+  <updated>2013-05-28T08:49:37-04:00</updated>
   <id>http://www.learningipadprogramming.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning iPad Programming, 2nd Edition, is Available]]></title>
+    <link href="http://www.learningipadprogramming.com/2013/05/28/learning-ipad-programming-2nd-edition-is-available/"/>
+    <updated>2013-05-28T00:00:00-04:00</updated>
+    <id>http://www.learningipadprogramming.com/2013/05/28/learning-ipad-programming-2nd-edition-is-available</id>
+    <content type="html"><![CDATA[<p>I&#8217;m excited to announce the second edition of <a href='http://www.amazon.com/gp/product/0321885716/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321885716&amp;linkCode=as2&amp;tag=whitepeaksoft-20'>Learning iPad Programming</a> is now on sale at your favorite book store. The second edition has been updated to cover features found in iOS 6.</p>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PhotoWheel 2 is Available for Download]]></title>
@@ -136,68 +144,6 @@
 <p>As an alternative, you can sign into the <a href='https://developer.apple.com/devcenter/ios/'>iOS Dev Center</a> and scroll down to the Downloads area to find the download link to Xcode 4.2 for Snow Leopard.</p>
 
 <p><img alt='iOS Dev Center Apple Developer' src='/images/blog/2012-03-24/iOS-Dev-Center-Apple-Developer.png' /></p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Is There an Issue with the Print Version]]></title>
-    <link href="http://www.learningipadprogramming.com/2012/03/24/is-there-an-issue-with-the-print-version/"/>
-    <updated>2012-03-24T00:00:00-04:00</updated>
-    <id>http://www.learningipadprogramming.com/2012/03/24/is-there-an-issue-with-the-print-version</id>
-    <content type="html"><![CDATA[<p>Learning iPad Programming has received two negative reviews on Amazon, both concerning the print quality of the book. I&#8217;ve received a number of inquires because of these two reviews, so I decided to make a blog posting.</p>
-
-<p><strong>In short, there is nothing wrong with the print quality of the book.</strong> The paper stock is a little thin, but beyond that, the print version is of the same high quality as other programming books from Addison Wesley. This of course is my opinion, and my opinion is based on reading the book myself and comparing it to the many other programming book I own.</p>
-
-<p>That said, I would like to address the concerns mentioned in the two reviews, which are available <a href='http://www.amazon.com/review/R19TKCFJHSKQUW/ref=cm_cr_pr_perm?ie=UTF8&amp;amp;ASIN=0321750403&amp;amp;nodeID=&amp;amp;tag=&amp;amp;linkCode='>here</a> and <a href='http://www.amazon.com/review/R2XCRENVK65S89/ref=cm_cr_pr_perm?ie=UTF8&amp;amp;ASIN=0321750403&amp;amp;nodeID=&amp;amp;tag=&amp;amp;linkCode='>here</a>.</p>
-
-<h2 id='responding_to_the_reviews'>Responding to the Reviews</h2>
-
-<p>The first review says, &#8220;This print version uses very small fonts, the figures are poor black/grey/white renderings of color images, and the paper is thin enough that the other side of the page is faintly visible.&#8221; Let me address each point.</p>
-
-<p>&#8220;Very small fonts.&#8221; I disagree with this. The font size is the same size found in many other programming books including those from Addison Wesley.</p>
-
-<p>&#8220;The figures are poor black/grey/white renderings of color images.&#8221; It is true that figure images are greyscale version of color images. The images are screenshots taken from my MacBook Pro and iPad, which means the images were originally color. But the greyscale rendering of the images is on par with other print books that I have compared. I guess it could be a matter of personal preference, but I have no issue with the quality of the greyscale images. That said, I wish the figure images were printed in full color, but that would only raise the cost of the book without providing additional value.</p>
-
-<p>&#8220;The paper is thin enough that the other side of the page is faintly visible.&#8221; This is true, and it&#8217;s my one and only complaint about the print book. The paper stock is a little thin. The issue has been brought to the publisher&#8217;s attention, and they plan to use a thicker paper stock in the future. When that will happen is something I don&#8217;t know, but I have been told future printings will use thicker paper stock. (As of this writing, there have been two printings of the book, both using the thinner paper stock.)</p>
-
-<p>As for being able to see print from the other side, yes, this is true, but it is faint and I only notice it in white space areas. It does not district me from reading the book, but <a href='http://netforbeginners.about.com/od/xyz/f/What-Is-YMMV.htm'>YMMV</a>. I&#8217;ll also point out that a number of other print books do the same. For example, while comparing my book to <a href='http://www.amazon.com/gp/product/0321535022/ref=as_li_ss_il?ie=UTF8&amp;amp;tag=whitepeaksoft-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0321535022'>Cocoa Design Patterns</a>, I noticed print from the other side is slightly visible and it uses a slightly thicker paper stock. In my opinion, this is something that happens when black ink is printed on most white paper stock. I even notice this on printouts from my home printer using standard quality inkjet paper stock.</p>
-
-<p>The second review has this to say, &#8220;I became more and more frustrated with trying to read the small type printed in ink so light that it looked as if the printing press had run out of ink. The code listing font is even more difficult to read.&#8221;</p>
-
-<p>Again, the font size is the same size found in many other books from Addison Wesley, and the code listings use the some font size. The only difference is the font style. A monospace font is used for the source code listing.</p>
-
-<p>The light ink that &#8220;looked as if the printing press has run out of ink&#8221;, well, all I can say is it is possible that the reviewer did receive a defective book. However, I have reviewed 35 print versions from the first printing, and I did not find a single book with the issue of light ink. Again, it&#8217;s possible the individual received a defective book, but defective books are not common.</p>
-
-<p>So is there a problem with the print version of Learning iPad Programming? Absolutely not. The paper stock is thin, and I wish that was not the case, but it does not, in my opinion, take away from the readability of the book. As for the font size, quality of figure images, etc, well, that&#8217;s probably a matter of preference.</p>
-
-<h2 id='how_to_decide'>How to Decide</h2>
-
-<p>How can you decide if the print quality is suitable for you? Here are some options for you:</p>
-
-<p>1) Visit a brick and mortar book store and flip through the pages yourself. I know this is not an option for everyone especially those living outside the U.S., but for those living nearing a Barnes and Noble, stop by the store and compare the print quality to that of other programming books. I&#8217;m sure you will see little to no difference.</p>
-
-<p>2) Take a look at this <a href='http://ptgmedia.pearsoncmg.com/images/9780321750402/samplepages/0321750403.pdf'>sample PDF</a>. While not exactly the same as having a printed copy of the book in your hands, you can see what fonts are used, font sizes, the quality of the figure images, and so on. It is the best representation of the print book without holding the actual book in your hands.</p>
-
-<p>3) Take a look at the photos posted below. These are photographs of random pages from the book. I&#8217;m no photographer, so the pictures could be a little better - a lot better in fact - but as you can see the font size and print quality are very readable.</p>
-
-<p>4) Buy the ebook edition. The book is available in the <a href='http://amzn.to/ipadprogbook-kindle'>Kindle Book Store</a>, iBooks Store, and from <a href='http://www.informit.com/store/product.aspx?isbn=0321750403'>informIT.com</a> as PDF and epub. This option also saves trees, and it has become my prefer way to purchase new books.</p>
-
-<p>Compare the <a href='http://ptgmedia.pearsoncmg.com/images/9780321750402/samplepages/0321750403.pdf'>sample PDF</a> and photos below then decide for yourself if the print version is suitable for you. And if by chance you happen to receive a deflective book then let me know. Send me specific page numbers, and I can request a warehouse inspection. Or send me the book, and I&#8217;ll make sure you receive a good copy.</p>
-
-<h2 id='all_feedback_is_good_feedback'>All Feedback is Good Feedback</h2>
-
-<p>One last point to make. In no way am I saying the two individuals should not have posted the reviews. On the contrary, all feedback, good and bad, is welcome. All feedback is good feedback in my opinion. And if these individuals had not posted the reviews then the publisher would not have agreed to use a thicker paper stock in the future. So post your review, good or bad, to Amazon. It will help make this book and others that much better.</p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3920.jpg' /></p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3924.jpg' /></p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3926.jpg' /></p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3928.jpg' /></p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3929.jpg' /></p>
-
-<p><img alt='' src='/images/blog/2012-03-24/IMG_3933.jpg' /></p>]]></content>
   </entry>
   
 </feed>
